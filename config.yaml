@@ -1,0 +1,52 @@
+site_name: MUST视传2026校招情报站
+site_desc: 澳门科技大学视觉传达设计2026届本科应届生校园招聘专属情报站
+version: 1.0
+created: 2026-05-08
+update_frequency: daily
+
+# 数据来源
+data_sources:
+  - 应届生求职网 (yingjiesheng.com)
+  - 牛客网校招 (nowcoder.com)
+  - 智联招聘 (zhaopin.com)
+  - 猎聘 (liepin.com)
+  - 澳科大创业就业发展中心 (must.edu.mo/cecp)
+
+# 覆盖区域
+coverage:
+  - 粤港澳大湾区（广州/深圳/珠海/澳门/惠州/东莞/佛山）
+  - 上海
+  - 北京
+  - 杭州
+  - 宁波
+  - 武汉
+
+# 岗位类型
+job_types:
+  - 品牌设计
+  - UI/UX设计
+  - 平面设计
+  - 视觉设计
+  - 包装设计
+  - 动效/视频设计
+  - 工业设计
+
+# 每日推送设置
+push_settings:
+  time: "08:45"
+  timezone: "Asia/Shanghai"
+  content: 每日校招情报（含6个精选岗位+大湾区专场+截止提醒+求职提示）
+
+# 网站文件
+files:
+  index: /root/.openclaw/workspace/校招情报站/index.html
+  report_script: /root/.openclaw/workspace/校招情报站/daily_report.py
+  config: /root/.openclaw/workspace/校招情报站/config.yaml
+  reports_dir: /root/.openclaw/workspace/校招情报站/reports/
+
+# 用户信息
+user:
+  school: 澳门科技大学
+  major: 视觉传达设计
+  grade: 2026届本科应届生
+  location_preference: 粤港澳大湾区优先
