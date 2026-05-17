@@ -706,7 +706,10 @@ tr:hover td{background:#fafafa}
 </section>
 <script>
   fetch('daily.html')
-    .then(r => r.text())
+    .then(r => {
+      if (!r.ok) throw new Error('daily.html not found (' + r.status + ')');
+      return r.text();
+    })
     .then(html => {
       document.getElementById('daily-content').innerHTML = html;
       const parser = new DOMParser();
