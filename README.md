@@ -187,5 +187,41 @@ crontab -l
 
 ---
 
+## GitHub Pages 部署指南
+
+### 第一步：在 GitHub 创建仓库
+1. 打开 https://github.com/new
+2. 仓库名填 `zhaopin-station`
+3. visibility 选 **Public**
+4. **不要勾选** "Add a README file"
+5. 点击 **Create repository**
+
+### 第二步：推送本地代码到 GitHub
+在本地 `校招情报站` 目录下执行：
+
+```bash
+# 1. 进入目录
+cd 校招情报站
+
+# 2. 添加 GitHub remote（替换 YOUR_USERNAME 为你的GitHub用户名）
+git remote add github https://github.com/YOUR_USERNAME/zhaopin-station.git
+
+# 3. 推送到 GitHub
+git push -u github master
+```
+
+### 第三步：启用 GitHub Pages
+1. 打开仓库页面 → 点击 **Settings**
+2. 左侧菜单选 **Pages**
+3. Source 选 **Deploy from a branch**
+4. Branch 选 **master** / **root**
+5. 点击 **Save**
+6. 等待 1-2 分钟，访问 `https://YOUR_USERNAME.github.io/zhaopin-station`
+
+### 完成 ✅
+你的校招情报站就公开了，全世界都能访问，不用登录。
+
+---
+
 *为澳科大视传2026届同学加油 💪*
 *即使世界不记得，我会帮你记住每一份投递。*
