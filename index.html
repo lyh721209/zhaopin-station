@@ -1,20 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>婢崇澶ц浼?026灞?路 鏍″洯鎷涜仒鎯呮姤绔?/title>
+<title>澳科大视传2026届 · 校园招聘情报站</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--primary:#1a1a2e;--accent:#e94560;--gold:#f5a623;--blue:#16213e;--light:#f8f9fa;--card:#fff;--text:#333;--muted:#888;--success:#27ae60;--warning:#f39c12;--danger:#e74c3c}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--light);color:var(--text);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 
-/* 椤堕儴閫氱煡鏍?*/
+/* 顶部通知栏 */
 .notice-bar{background:linear-gradient(90deg,var(--accent),#ff6b6b);color:#fff;text-align:center;padding:10px;font-size:14px;position:fixed;top:0;left:0;right:0;z-index:1000}
 .notice-bar strong{background:#fff;color:var(--accent);padding:2px 8px;border-radius:4px;margin:0 4px}
 
-/* 瀵艰埅 */
+/* 导航 */
 .nav{background:var(--primary);padding:60px 0 20px;position:sticky;top:0;z-index:999;box-shadow:0 2px 20px rgba(0,0,0,0.1)}
 .nav .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
 .logo{color:#fff;font-size:24px;font-weight:700}
@@ -24,7 +24,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .nav-links a{color:#fff;text-decoration:none;font-size:14px;opacity:0.85;transition:0.2s}
 .nav-links a:hover{opacity:1;color:var(--gold)}
 
-/* 鑻遍泟鍖?*/
+/* 英雄区 */
 .hero{background:linear-gradient(135deg,var(--primary) 0%,var(--blue) 100%);color:#fff;padding:60px 0;text-align:center}
 .hero h1{font-size:42px;margin-bottom:12px;font-weight:700}
 .hero p{font-size:18px;color:#aaa;margin-bottom:30px}
@@ -33,17 +33,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .stat-num{font-size:36px;font-weight:700;color:var(--gold)}
 .stat-label{font-size:13px;color:#aaa;margin-top:4px}
 
-/* 绛涢€夋爮 */
+/* 筛选栏 */
 .filter-bar{background:#fff;padding:16px 0;border-bottom:1px solid #eee;position:sticky;top:60px;z-index:998}
 .filter-bar .container{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .filter-btn{background:#f0f0f0;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-size:13px;transition:0.2s}
 .filter-btn:hover,.filter-btn.active{background:var(--accent);color:#fff}
 .filter-select{border:1px solid #ddd;padding:8px 14px;border-radius:8px;font-size:13px;background:#fff}
 
-/* 姣忔棩绮鹃€?*/
+/* 每日精选 */
 .daily-pick{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:40px 0;margin-bottom:30px}
 .daily-pick h2{font-size:24px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.daily-pick h2::before{content:"鈽?;color:var(--gold)}
+.daily-pick h2::before{content:"★";color:var(--gold)}
 .daily-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
 .daily-card{background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,0.2)}
 .daily-card .tag{display:inline-block;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:12px;font-size:11px;margin-bottom:10px}
@@ -51,7 +51,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .daily-card p{font-size:13px;opacity:0.9;line-height:1.7}
 .daily-card .meta{display:flex;gap:16px;margin-top:12px;font-size:12px;opacity:0.7}
 
-/* 鏍℃嫑鍗＄墖 */
+/* 校招卡片 */
 .section-title{font-size:22px;font-weight:700;margin:40px 0 20px;display:flex;align-items:center;gap:10px;color:var(--primary)}
 .section-title::before{content:"";display:inline-block;width:4px;height:24px;background:var(--accent);border-radius:2px}
 
@@ -86,19 +86,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Micr
 .btn-outline:hover{background:var(--accent);color:#fff}
 .btn-sm{padding:6px 14px;font-size:12px}
 
-/* 鎴鎻愰啋 */
+/* 截止提醒 */
 .deadline-alert{background:#fff3e0;border:1px solid #ffe0b2;border-radius:8px;padding:14px 18px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
 .deadline-alert .icon{font-size:20px}
 .deadline-alert p{font-size:14px;color:#e65100}
 
-/* 鍩庡競鏉垮潡 */
+/* 城市板块 */
 .city-section{background:#fff;border-radius:12px;padding:30px;margin-bottom:24px;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
 .city-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
 .city-name{font-size:20px;font-weight:700;color:var(--primary)}
 .city-name small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
 .city-count{background:var(--light);padding:4px 14px;border-radius:20px;font-size:13px;color:var(--muted)}
 
-/* 琛ㄦ牸 */
+/* 表格 */
 .table-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{background:var(--primary);color:#fff;padding:12px;text-align:left;font-weight:600}
@@ -114,14 +114,14 @@ tr:hover td{background:#fafafa}
 .link-cell a{color:var(--accent);text-decoration:none;font-weight:500}
 .link-cell a:hover{text-decoration:underline}
 
-/* 宸ュ叿鍖?*/
+/* 工具区 */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
 .tool-card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
 .tool-card h3{font-size:16px;margin-bottom:10px;color:var(--primary)}
 .tool-card p{font-size:13px;color:#666;line-height:1.7}
 .tool-card .btn{margin-top:14px}
 
-/* 椤佃剼 */
+/* 页脚 */
 .footer{background:var(--primary);color:#fff;padding:40px 0 20px;margin-top:60px}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-bottom:30px}
 .footer h4{font-size:16px;margin-bottom:14px;color:var(--gold)}
@@ -129,11 +129,11 @@ tr:hover td{background:#fafafa}
 .footer a:hover{color:#fff}
 .footer-bottom{border-top:1px solid #333;padding-top:20px;text-align:center;font-size:12px;color:#666}
 
-/* 鎮诞鎸夐挳 */
+/* 悬浮按钮 */
 .float-btn{position:fixed;bottom:30px;right:30px;background:var(--accent);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 16px rgba(233,69,96,0.4);z-index:999;text-decoration:none;transition:0.2s}
 .float-btn:hover{transform:scale(1.1)}
 
-/* 鍝嶅簲寮?*/
+/* 响应式 */
 @media(max-width:768px){
 .hero h1{font-size:28px}
 .hero-stats{gap:20px}
@@ -143,475 +143,476 @@ tr:hover td{background:#fafafa}
 .daily-grid{grid-template-columns:1fr}
 }
 
-/* 鏇存柊鏃堕棿 */
+/* 更新时间 */
 .update-time{text-align:center;font-size:12px;color:var(--muted);margin:20px 0}
 </style>
 </head>
 <body>
 
-<!-- 椤堕儴閫氱煡 -->
+<!-- 顶部通知 -->
 <div class="notice-bar">
-  馃摙 姣忔棩9:00鑷姩鎺ㄩ€佹牎鎷涙儏鎶?| 浠婃棩鏇存柊 <strong>45</strong> 鏉¤璁＄被宀椾綅 | 婢崇澶ц浼?026灞婁笓灞?</div>
+  📢 每日9:00自动推送校招情报 | 今日更新 <strong>45</strong> 条设计类岗位 | 澳科大视传2026届专属
+</div>
 
-<!-- 瀵艰埅 -->
+<!-- 导航 -->
 <nav class="nav">
   <div class="container">
     <div class="logo">
-      MUST瑙嗕紶2026<span>鏍℃嫑鎯呮姤绔?/span>
-      <small>婢抽棬绉戞妧澶у 路 瑙嗚浼犺揪璁捐 路 鏈搴斿眾鐢?/small>
+      MUST视传2026<span>校招情报站</span>
+      <small>澳门科技大学 · 视觉传达设计 · 本科应届生</small>
     </div>
     <ul class="nav-links">
-      <li><a href="#daily">姣忔棩绮鹃€?/a></li>
-      <li><a href="#jobs">鏍℃嫑鍒楄〃</a></li>
-      <li><a href="#gbay">澶ф咕鍖轰笓鍦?/a></li>
-    <li><a href="#fujian-cygq">馃彌锔忕寤哄ぎ鍥戒紒</a></li>
-      <li><a href="#fujian-sydw">馃摐浜嬩笟鍗曚綅</a></li>
-      <li><a href="#fujian-ssgs">馃搱涓婂競鍏徃</a></li>
-      <li><a href="#fujian-xtj">鈿℃柊鐗圭簿浼佷笟</a></li>
-      <li><a href="#fuzhou">绂忓窞/娉夊窞</a></li>
-      <li><a href="#macau">婢抽棬鏈湴</a></li>
-      <li><a href="#tools">姹傝亴宸ュ叿</a></li>
-      <li><a href="#calendar">鏍℃嫑鏃ュ巻</a></li>
+      <li><a href="#daily">每日精选</a></li>
+      <li><a href="#jobs">校招列表</a></li>
+      <li><a href="#gbay">大湾区专场</a></li>
+    <li><a href="#fujian-cygq">🏛️福建央国企</a></li>
+      <li><a href="#fujian-sydw">📜事业单位</a></li>
+      <li><a href="#fujian-ssgs">📈上市公司</a></li>
+      <li><a href="#fujian-xtj">⚡新特精企业</a></li>
+      <li><a href="#fuzhou">福州/泉州</a></li>
+      <li><a href="#macau">澳门本地</a></li>
+      <li><a href="#tools">求职工具</a></li>
+      <li><a href="#calendar">校招日历</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- 鑻遍泟鍖?-->
+<!-- 英雄区 -->
 <section class="hero">
   <div class="container">
-    <h1>馃帗 婢崇澶ц浼?026灞婃牎鎷涙儏鎶ョ珯</h1>
-    <p>鑱氬悎绮ゆ腐婢冲ぇ婀惧尯 路 鍏ㄥ浗璁捐绫绘牎鍥嫑鑱樹俊鎭?| 姣忔棩鏇存柊 路 绮惧噯鎶曢€?/p>
+    <h1>🎓 澳科大视传2026届校招情报站</h1>
+    <p>聚合粤港澳大湾区 · 全国设计类校园招聘信息 | 每日更新 · 精准投递</p>
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">128+</div>
-        <div class="stat-label">鍦ㄦ嫑宀椾綅</div>
+        <div class="stat-label">在招岗位</div>
       </div>
       <div class="stat">
         <div class="stat-num">45</div>
-        <div class="stat-label">澶ф咕鍖轰紒涓?/div>
+        <div class="stat-label">大湾区企业</div>
       </div>
       <div class="stat">
         <div class="stat-num">12</div>
-        <div class="stat-label">鏈懆鎴</div>
+        <div class="stat-label">本周截止</div>
       </div>
       <div class="stat">
         <div class="stat-num">8</div>
-        <div class="stat-label">婢抽棬鏈湴</div>
+        <div class="stat-label">澳门本地</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 绛涢€夋爮 -->
+<!-- 筛选栏 -->
 <div class="filter-bar">
   <div class="container">
-    <button class="filter-btn active" onclick="filterJobs('all', this)">鍏ㄩ儴</button>
-    <button class="filter-btn" onclick="filterJobs('gd', this)">骞夸笢/娓境</button>
-    <button class="filter-btn" onclick="filterJobs('sh', this)">涓婃捣</button>
-    <button class="filter-btn" onclick="filterJobs('bj', this)">鍖椾含</button>
-    <button class="filter-btn" onclick="filterJobs('hz', this)">鏉窞</button>
-    <button class="filter-btn" onclick="filterJobs('sz', this)">娣卞湷</button>
-    <button class="filter-btn" onclick="filterJobs('gz', this)">骞垮窞</button>
+    <button class="filter-btn active" onclick="filterJobs('all')">全部</button>
+    <button class="filter-btn" onclick="filterJobs('gd')">广东/港澳</button>
+    <button class="filter-btn" onclick="filterJobs('sh')">上海</button>
+    <button class="filter-btn" onclick="filterJobs('bj')">北京</button>
+    <button class="filter-btn" onclick="filterJobs('hz')">杭州</button>
+    <button class="filter-btn" onclick="filterJobs('sz')">深圳</button>
+    <button class="filter-btn" onclick="filterJobs('gz')">广州</button>
     <select class="filter-select" onchange="filterByType(this.value)">
-      <option value="">宀椾綅绫诲瀷</option>
-      <option value="brand">鍝佺墝璁捐</option>
-      <option value="ui">UI/UX璁捐</option>
-      <option value="graphic">骞抽潰璁捐</option>
-      <option value="visual">瑙嗚璁捐</option>
-      <option value="package">鍖呰璁捐</option>
-      <option value="motion">鍔ㄦ晥/瑙嗛</option>
+      <option value="">岗位类型</option>
+      <option value="brand">品牌设计</option>
+      <option value="ui">UI/UX设计</option>
+      <option value="graphic">平面设计</option>
+      <option value="visual">视觉设计</option>
+      <option value="package">包装设计</option>
+      <option value="motion">动效/视频</option>
     </select>
     <select class="filter-select" onchange="filterByDeadline(this.value)">
-      <option value="">鎴鏃堕棿</option>
-      <option value="3">3澶╁唴鎴</option>
-      <option value="7">7澶╁唴鎴</option>
-      <option value="30">鏈湀鎴</option>
-      <option value="ongoing">婊氬姩鎷涜仒</option>
+      <option value="">截止时间</option>
+      <option value="3">3天内截止</option>
+      <option value="7">7天内截止</option>
+      <option value="30">本月截止</option>
+      <option value="ongoing">滚动招聘</option>
     </select>
   </div>
 </div>
 
-<!-- 姣忔棩绮鹃€?-->
+<!-- 每日精选 -->
 <section class="daily-pick" id="daily">
   <div class="container">
-    <h2>馃敟 浠婃棩绮鹃€夋牎鎷涳紙2026-05-17锛?/h2>
+    <h2>🔥 今日精选校招（2026-05-17）</h2>
     <div class="daily-grid">
       <div class="daily-card">
-        <span class="tag">馃彌锔?甯傚睘鍥戒紒</span>
-        <h3>绂忓窞鏂版鍩庡競寤鸿鍙戝睍 路 绛栧垝鎷撳睍宀?/h3>
-        <p>甯傚睘鍥戒紒锛?026灞婃牎鎷涳紝璐熻矗鍩庡競寤鸿椤圭洰绛栧垝涓庢嫇灞曘€傛湰绉戝彲鎶曪紝璁捐/绛栧垝鐩稿叧涓撲笟浼樺厛銆傜宸炲伐浣溿€?/p>
+        <span class="tag">🏛️ 市属国企</span>
+        <h3>福州新榕城市建设发展 · 策划拓展岗</h3>
+        <p>市属国企，2026届校招，负责城市建设项目策划与拓展。本科可投，设计/策划相关专业优先。福州工作。</p>
         <div class="meta">
-          <span>馃搷 绂忓窞</span>
-          <span>馃挵 闈㈣</span>
-          <span>鈴?5鏈?鏃ュ彂甯?/span>
+          <span>📍 福州</span>
+          <span>💰 面议</span>
+          <span>⏰ 5月8日发布</span>
         </div>
         <div style="margin-top:12px;">
-          <a href="https://fjgzw.fuzhou.gov.cn" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?鈫?/a>
+          <a href="https://fjgzw.fuzhou.gov.cn" target="_blank" class="btn btn-primary btn-sm">官网投递 →</a>
         </div>
       </div>
       <div class="daily-card">
-        <span class="tag">猸?鐪佸睘鍥戒紒</span>
-        <h3>绂忓缓鐪佷簩寤哄缓璁鹃泦鍥?路 2026鏍℃嫑</h3>
-        <p>鐪佸睘澶у瀷鍥芥湁寤虹瓚浼佷笟锛?026灞婃牎鍥嫑鑱樸€傝璁＄被/宸ョ▼绠＄悊绫诲矖浣嶏紝鏈璧凤紝鍘﹂棬/绂忓窞澶氬湴鏈夊矖銆?/p>
+        <span class="tag">⭐ 省属国企</span>
+        <h3>福建省二建建设集团 · 2026校招</h3>
+        <p>省属大型国有建筑企业，2026届校园招聘。设计类/工程管理类岗位，本科起，厦门/福州多地有岗。</p>
         <div class="meta">
-          <span>馃搷 鍘﹂棬/绂忓窞</span>
-          <span>馃挵 闈㈣</span>
-          <span>鈴?5鏈?4鏃ュ彂甯?/span>
+          <span>📍 厦门/福州</span>
+          <span>💰 面议</span>
+          <span>⏰ 5月14日发布</span>
         </div>
         <div style="margin-top:12px;">
-          <a href="https://www.fjecc.com.cn" target="_blank" class="btn btn-primary btn-sm">绔嬪嵆鎶曢€?鈫?/a>
+          <a href="https://www.fjecc.com.cn" target="_blank" class="btn btn-primary btn-sm">立即投递 →</a>
         </div>
       </div>
       <div class="daily-card">
-        <span class="tag">馃搱 涓婂競鍏徃</span>
-        <h3>鍘﹂棬浜胯仈缃戠粶 路 瑙嗚/浜や簰璁捐甯?/h3>
-        <p>涓婂競鍏徃锛屽叏鐞冮鍏堢殑缁熶竴閫氫俊瑙ｅ喅鏂规鎻愪緵鍟嗐€傝瑙夎璁″笀銆佷氦浜掕璁″笀鏍℃嫑宀椾綅锛屾湰绉戯紝璁捐鐩稿叧涓撲笟銆?/p>
+        <span class="tag">📈 上市公司</span>
+        <h3>厦门亿联网络 · 视觉/交互设计师</h3>
+        <p>上市公司，全球领先的统一通信解决方案提供商。视觉设计师、交互设计师校招岗位，本科，设计相关专业。</p>
         <div class="meta">
-          <span>馃搷 鍘﹂棬</span>
-          <span>馃挵 闈㈣</span>
-          <span>鈴?鎸佺画鎷涜仒</span>
+          <span>📍 厦门</span>
+          <span>💰 面议</span>
+          <span>⏰ 持续招聘</span>
         </div>
         <div style="margin-top:12px;">
-          <a href="https://yealink.zhiye.com/Campus" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?鈫?/a>
+          <a href="https://yealink.zhiye.com/Campus" target="_blank" class="btn btn-primary btn-sm">官网投递 →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 鎴鎻愰啋 -->
+<!-- 截止提醒 -->
 <div class="container">
   <div class="deadline-alert">
-    <span class="icon">鈴?/span>
-    <p><strong>鏈懆鎴鎻愰啋锛?/strong>钀屽姏鏄熺悆IP鎻掔敾甯?瑙嗚璁捐宀楋紙05-26鎴锛夈€佸帵闂ㄥぇ瀛﹀嚭鐗堢ぞ璁捐涓撳憳锛?5-30鎴锛夊嵆灏嗗埌鏈熴€傜宸炴柊姒曞煄甯傚缓璁俱€佺寤虹渷浜屽缓闆嗗洟銆佺宸炲湴閾侀泦鍥㈢瓑澶浗浼佸矖浣嶆寔缁紑鏀句腑銆?/p>
+    <span class="icon">⏰</span>
+    <p><strong>本周截止提醒：</strong>萌力星球IP插画师/视觉设计岗（05-26截止）、厦门大学出版社设计专员（05-30截止）即将到期。福州新榕城市建设、福建省二建集团、福州地铁集团等央国企岗位持续开放中。</p>
   </div>
 </div>
 
-<!-- 鏍℃嫑鍒楄〃 -->
+<!-- 校招列表 -->
 <section class="container" id="jobs">
-  <h2 class="section-title">馃幆 璁捐绫绘牎鎷涘矖浣嶆眹鎬?/h2>
+  <h2 class="section-title">🎯 设计类校招岗位汇总</h2>
   
   <div class="job-grid">
-    <!-- 宀椾綅1 -->
+    <!-- 岗位1 -->
     <div class="job-card hot" data-city="sz" data-type="visual">
       <div class="job-header">
-        <div class="job-title">瑙嗚璁捐绠″煿鐢?/div>
+        <div class="job-title">视觉设计管培生</div>
         <div class="job-tags">
-          <span class="tag tag-city">娣卞湷</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">深圳</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 闊堕煶绉戞妧锛圫hokz锛壜?鍏ㄧ悆杩愬姩鑰虫満绗竴</div>
-      <div class="job-desc">鍏ㄧ悆甯傚満瑙嗚璁捐銆佸搧鐗岃璁°€佸钩闈㈣璁°€傝姹傝璁¤蒋浠剁啛缁冦€佸垱鎰忚兘鍔涖€佷綔鍝侀泦銆?/div>
+      <div class="job-company"><span class="dot"></span> 韶音科技（Shokz）· 全球运动耳机第一</div>
+      <div class="job-desc">全球市场视觉设计、品牌设计、平面设计。要求设计软件熟练、创意能力、作品集。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎴 2026-05-04 路 鏈</div>
+        <div class="job-meta">⏰ 截止 2026-05-04 · 本科</div>
         <div class="job-actions">
-          <a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?/a>
+          <a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank" class="btn btn-primary btn-sm">官网投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅2 -->
+    <!-- 岗位2 -->
     <div class="job-card hot" data-city="sz" data-type="ui">
       <div class="job-header">
-        <div class="job-title">UI璁捐甯堬紙鏍℃嫑锛?/div>
+        <div class="job-title">UI设计师（校招）</div>
         <div class="job-tags">
-          <span class="tag tag-city">娣卞湷</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">深圳</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 闊堕煶绉戞妧 路 鍖楃編涓氬姟閮?/div>
-      <div class="job-desc">瀹樼綉/鍞悗骞冲彴缃戦〉UI璁捐锛岀敤鎴锋礊瀵熴€佸師鍨嬪埗浣溿€佽璁¤瘎瀹°€侱TC/鐢靛晢缁忛獙浼樺厛銆?/div>
+      <div class="job-company"><span class="dot"></span> 韶音科技 · 北美业务部</div>
+      <div class="job-desc">官网/售后平台网页UI设计，用户洞察、原型制作、设计评审。DTC/电商经验优先。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎴 2026-05-04 路 鏈 路 闇€浣滃搧闆?/div>
+        <div class="job-meta">⏰ 截止 2026-05-04 · 本科 · 需作品集</div>
         <div class="job-actions">
-          <a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?/a>
+          <a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank" class="btn btn-primary btn-sm">官网投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅3 -->
+    <!-- 岗位3 -->
     <div class="job-card new" data-city="gz" data-type="brand">
       <div class="job-header">
-        <div class="job-title">鍝佺墝瑙嗚璁捐甯堬紙鏍℃嫑鐢燂級</div>
+        <div class="job-title">品牌视觉设计师（校招生）</div>
         <div class="job-tags">
-          <span class="tag tag-city">涓婃捣</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">上海</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 钑夊唴锛圔ananain锛?/div>
-      <div class="job-desc">瑙嗚浼犺揪璁捐銆佸钩闈㈣璁°€佺編鏈€佹湇瑁呰璁＄瓑涓撲笟銆傚搧鐗岃瑙変綋绯绘惌寤轰笌缁存姢銆?/div>
+      <div class="job-company"><span class="dot"></span> 蕉内（Bananain）</div>
+      <div class="job-desc">视觉传达设计、平面设计、美术、服装设计等专业。品牌视觉体系搭建与维护。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎷涙弧鍗虫 路 2026灞?路 鏈</div>
+        <div class="job-meta">⏰ 招满即止 · 2026届 · 本科</div>
         <div class="job-actions">
-          <a href="https://bananain.zhiye.com/Campus" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?/a>
+          <a href="https://bananain.zhiye.com/Campus" target="_blank" class="btn btn-primary btn-sm">官网投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅4 -->
+    <!-- 岗位4 -->
     <div class="job-card new" data-city="gz" data-type="graphic">
       <div class="job-header">
-        <div class="job-title">骞抽潰璁捐 / UI璁捐 / 鍦烘櫙鍘熺敾</div>
+        <div class="job-title">平面设计 / UI设计 / 场景原画</div>
         <div class="job-tags">
-          <span class="tag tag-city">骞垮窞</span>
-          <span class="tag tag-type">鏄ユ嫑</span>
+          <span class="tag tag-city">广州</span>
+          <span class="tag tag-type">春招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 璇楁偊缃戠粶</div>
-      <div class="job-desc">缇庢湳璁捐绫伙細鐗规晥璁捐銆佸姩鏁堣璁°€佸钩闈㈣璁°€乁I璁捐锛堣瑙?浜や簰鏂瑰悜锛夈€佸満鏅師鐢汇€?/div>
+      <div class="job-company"><span class="dot"></span> 诗悦网络</div>
+      <div class="job-desc">美术设计类：特效设计、动效设计、平面设计、UI设计（视觉/交互方向）、场景原画。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎷涙弧鍗虫 路 2025.9-2026.7姣曚笟</div>
+        <div class="job-meta">⏰ 招满即止 · 2025.9-2026.7毕业</div>
         <div class="job-actions">
-          <a href="https://campus.shiyue.com" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?/a>
+          <a href="https://campus.shiyue.com" target="_blank" class="btn btn-primary btn-sm">官网投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅5 -->
+    <!-- 岗位5 -->
     <div class="job-card" data-city="nb" data-type="brand">
       <div class="job-header">
-        <div class="job-title">璁捐绠″煿鐢?/div>
+        <div class="job-title">设计管培生</div>
         <div class="job-tags">
-          <span class="tag tag-city">瀹佹尝</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">宁波</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 寰楀姏闆嗗洟 路 鍥藉绾у伐涓氳璁′腑蹇?/div>
-      <div class="job-desc">瑙嗚浼犺揪璁捐銆佸钩闈㈣璁°€佹彃鐢昏璁°€佷氦浜掕璁°€佹柊濯掍綋璁捐銆傛枃鍏峰埌鏂囧垱鍐嶅埌绉戝垱銆?/div>
+      <div class="job-company"><span class="dot"></span> 得力集团 · 国家级工业设计中心</div>
+      <div class="job-desc">视觉传达设计、平面设计、插画设计、交互设计、新媒体设计。文具到文创再到科创。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎸佺画鎷涜仒 路 2026灞?路 鏈</div>
+        <div class="job-meta">⏰ 持续招聘 · 2026届 · 本科</div>
         <div class="job-actions">
-          <a href="https://hr.deligroup.com" target="_blank" class="btn btn-primary btn-sm">瀹樼綉鎶曢€?/a>
+          <a href="https://hr.deligroup.com" target="_blank" class="btn btn-primary btn-sm">官网投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅6 -->
+    <!-- 岗位6 -->
     <div class="job-card" data-city="wh" data-type="package">
       <div class="job-header">
-        <div class="job-title">鍖呰璁捐甯堬紙闇€浣滃搧闆嗭級</div>
+        <div class="job-title">包装设计师（需作品集）</div>
         <div class="job-tags">
-          <span class="tag tag-city">姝︽眽</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">武汉</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 鏅鸿兘纭欢浼佷笟</div>
-      <div class="job-desc">浜у搧鍖呰璧勬枡璁捐銆佹牱鍝佹墦鏍风‘璁ゃ€佽繘搴﹁拷韪€傝姹傛彃鐢昏璁″拰涓夌淮閫犲瀷鑳藉姏锛孭S/AI/Rhino/CAD銆?/div>
+      <div class="job-company"><span class="dot"></span> 智能硬件企业</div>
+      <div class="job-desc">产品包装资料设计、样品打样确认、进度追踪。要求插画设计和三维造型能力，PS/AI/Rhino/CAD。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?鎴 2026-06-30 路 鏈 路 鑻辫宸ヤ綔璇█</div>
+        <div class="job-meta">⏰ 截止 2026-06-30 · 本科 · 英语工作语言</div>
         <div class="job-actions">
-          <a href="https://www.nowcoder.com/jobs/detail/444336" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://www.nowcoder.com/jobs/detail/444336" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅7 -->
+    <!-- 岗位7 -->
     <div class="job-card" data-city="hz" data-type="brand">
       <div class="job-header">
-        <div class="job-title">鍝佺墝璁捐 / 骞抽潰璁捐</div>
+        <div class="job-title">品牌设计 / 平面设计</div>
         <div class="job-tags">
-          <span class="tag tag-city">鏉窞</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">杭州</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 鏉窞鍗冭壓鏂囧寲绉戞妧</div>
-      <div class="job-desc">瑙嗚浼犺揪/璁捐涓撲笟锛屾枃鍖栧垱鎰忕被鍝佺墝璁捐銆傛澀宸炴枃鍒涗骇涓氬彂杈撅紝閫傚悎璁捐绫诲簲灞婄敓銆?/div>
+      <div class="job-company"><span class="dot"></span> 杭州千艺文化科技</div>
+      <div class="job-desc">视觉传达/设计专业，文化创意类品牌设计。杭州文创产业发达，适合设计类应届生。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?婊氬姩鎷涜仒 路 瑙嗚浼犺揪璁捐涓撲笟</div>
+        <div class="job-meta">⏰ 滚动招聘 · 视觉传达设计专业</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅8 -->
+    <!-- 岗位8 -->
     <div class="job-card urgent" data-city="sh" data-type="visual">
       <div class="job-header">
-        <div class="job-title">2026鎷涜仒瑙嗚浼犺揪璁捐甯?/div>
+        <div class="job-title">2026招聘视觉传达设计师</div>
         <div class="job-tags">
-          <span class="tag tag-city">涓婃捣/瀹夊窘</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">上海/安徽</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 涓婃捣杈炬槗鏍囪瘑绯荤粺</div>
-      <div class="job-desc">瑙嗚浼犺揪璁捐甯堛€佺幆澧冭壓鏈璁″笀銆佷骇鍝佽璁″笀銆傛爣璇嗙郴缁熻璁℃柟鍚戙€?/div>
+      <div class="job-company"><span class="dot"></span> 上海达易标识系统</div>
+      <div class="job-desc">视觉传达设计师、环境艺术设计师、产品设计师。标识系统设计方向。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?2026-04-03鍙戝竷 路 灏藉揩鎶曢€?/div>
+        <div class="job-meta">⏰ 2026-04-03发布 · 尽快投递</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅9 -->
+    <!-- 岗位9 -->
     <div class="job-card" data-city="bj" data-type="brand">
       <div class="job-header">
-        <div class="job-title">AI璁捐甯?/div>
+        <div class="job-title">AI设计师</div>
         <div class="job-tags">
-          <span class="tag tag-city">鍖椾含</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">北京</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 鐟炲垢鍜栧暋锛堜腑鍥斤級</div>
-      <div class="job-desc">AI杈呭姪璁捐鏂瑰悜锛屽搧鐗岃瑙変笌钀ラ攢鐗╂枡璁捐銆傚挅鍟¤繛閿佸ご閮ㄥ搧鐗屻€?/div>
+      <div class="job-company"><span class="dot"></span> 瑞幸咖啡（中国）</div>
+      <div class="job-desc">AI辅助设计方向，品牌视觉与营销物料设计。咖啡连锁头部品牌。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?2026-04-21鍙戝竷 路 灏藉揩鎶曢€?/div>
+        <div class="job-meta">⏰ 2026-04-21发布 · 尽快投递</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅10 -->
+    <!-- 岗位10 -->
     <div class="job-card" data-city="sh" data-type="brand">
       <div class="job-header">
-        <div class="job-title">璁捐瀹炰範鐢燂紙闀挎湡锛?/div>
+        <div class="job-title">设计实习生（长期）</div>
         <div class="job-tags">
-          <span class="tag tag-city">涓婃捣</span>
-          <span class="tag tag-type">瀹炰範</span>
+          <span class="tag tag-city">上海</span>
+          <span class="tag tag-type">实习</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 鍗氱惌鏁欒偛绉戞妧</div>
-      <div class="job-desc">鏁欒偛绉戞妧绫讳骇鍝佽瑙夎璁★紝閫傚悎绉疮浜掕仈缃戞暀鑲茶涓氱粡楠屻€傚彲杞鏈轰細銆?/div>
+      <div class="job-company"><span class="dot"></span> 博琭教育科技</div>
+      <div class="job-desc">教育科技类产品视觉设计，适合积累互联网教育行业经验。可转正机会。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?2026-04-22鍙戝竷 路 瀹炰範鍙浆姝?/div>
+        <div class="job-meta">⏰ 2026-04-22发布 · 实习可转正</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅11 -->
+    <!-- 岗位11 -->
     <div class="job-card" data-city="sz" data-type="visual">
       <div class="job-header">
-        <div class="job-title">瑙嗚璁捐甯?/div>
+        <div class="job-title">视觉设计师</div>
         <div class="job-tags">
-          <span class="tag tag-city">娣卞湷</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">深圳</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 娣卞湷甯傞叿闃崇數瀛愯锤鏄?/div>
-      <div class="job-desc">璺ㄥ鐢靛晢瑙嗚璁捐锛屼骇鍝佽鎯呴〉銆佽惀閿€娴锋姤銆佺ぞ濯掔礌鏉愯璁°€?/div>
+      <div class="job-company"><span class="dot"></span> 深圳市酷阳电子贸易</div>
+      <div class="job-desc">跨境电商视觉设计，产品详情页、营销海报、社媒素材设计。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?2026-04-22鍙戝竷 路 鏈</div>
+        <div class="job-meta">⏰ 2026-04-22发布 · 本科</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
 
-    <!-- 宀椾綅12 -->
+    <!-- 岗位12 -->
     <div class="job-card" data-city="sh" data-type="graphic">
       <div class="job-header">
-        <div class="job-title">骞抽潰璁捐甯?/div>
+        <div class="job-title">平面设计师</div>
         <div class="job-tags">
-          <span class="tag tag-city">涓婃捣</span>
-          <span class="tag tag-type">鏍℃嫑</span>
+          <span class="tag tag-city">上海</span>
+          <span class="tag tag-type">校招</span>
         </div>
       </div>
-      <div class="job-company"><span class="dot"></span> 涓婃捣绂捐禌鏅鸿兘绉戞妧</div>
-      <div class="job-desc">婵€鍏夐浄杈剧鎶€鍏徃鍝佺墝璁捐銆佸睍浼氱墿鏂欍€佷骇鍝佹墜鍐屻€丳PT妯℃澘璁捐銆?/div>
+      <div class="job-company"><span class="dot"></span> 上海禾赛智能科技</div>
+      <div class="job-desc">激光雷达科技公司品牌设计、展会物料、产品手册、PPT模板设计。</div>
       <div class="job-footer">
-        <div class="job-meta">鈴?2026-04-20鍙戝竷 路 鏈</div>
+        <div class="job-meta">⏰ 2026-04-20发布 · 本科</div>
         <div class="job-actions">
-          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
   </div>
 
-  <p class="update-time">馃搮 鏁版嵁鏇存柊鏃堕棿锛?026-05-17 | 鏉ユ簮锛氬簲灞婄敓姹傝亴缃戙€佺墰瀹㈢綉銆佹櫤鑱旀嫑鑱樸€佺寧鑱?/p>
+  <p class="update-time">📅 数据更新时间：2026-05-17 | 来源：应届生求职网、牛客网、智联招聘、猎聘</p>
 </section>
 
-<!-- 澶ф咕鍖轰笓鍦?-->
+<!-- 大湾区专场 -->
 <section class="container" id="gbay">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃寜 绮ゆ腐婢冲ぇ婀惧尯涓撳満 <small>娓境 路 骞垮窞 路 娣卞湷 路 鐝犳捣 路 浣涘北 路 涓滆帪</small></div>
-      <div class="city-count">28 瀹朵紒涓?/div>
+      <div class="city-name">🌉 粤港澳大湾区专场 <small>港澳 · 广州 · 深圳 · 珠海 · 佛山 · 东莞</small></div>
+      <div class="city-count">28 家企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>鎴</th>
-            <th>鎶曢€?/th>
+            <th>企业</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>截止</th>
+            <th>投递</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">娲叉槑绉戞妧</td>
-            <td class="position-cell">鍝佺墝钀ラ攢 / 宸ヤ笟璁捐</td>
-            <td class="location-cell">娣卞湷/鎯犲窞/涓北/婢抽棬</td>
-            <td class="deadline-cell safe">婊氬姩</td>
-            <td class="link-cell"><a href="https://unilumin.zhiye.com/Campus" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">洲明科技</td>
+            <td class="position-cell">品牌营销 / 工业设计</td>
+            <td class="location-cell">深圳/惠州/中山/澳门</td>
+            <td class="deadline-cell safe">滚动</td>
+            <td class="link-cell"><a href="https://unilumin.zhiye.com/Campus" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鏍煎姏鐢靛櫒</td>
-            <td class="position-cell">宸ヤ笟璁捐 / 骞抽潰璁捐</td>
-            <td class="location-cell">鐝犳捣</td>
-            <td class="deadline-cell safe">2026绉嬫嫑</td>
-            <td class="link-cell"><a href="https://zhaopin.greeyun.com" target="_blank">鏍℃嫑瀹樼綉 鈫?/a></td>
+            <td class="company-cell">格力电器</td>
+            <td class="position-cell">工业设计 / 平面设计</td>
+            <td class="location-cell">珠海</td>
+            <td class="deadline-cell safe">2026秋招</td>
+            <td class="link-cell"><a href="https://zhaopin.greeyun.com" target="_blank">校招官网 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">璇楁偊缃戠粶</td>
-            <td class="position-cell">骞抽潰璁捐 / UI璁捐 / 鍘熺敾</td>
-            <td class="location-cell">骞垮窞</td>
-            <td class="deadline-cell warning">鎷涙弧鍗虫</td>
-            <td class="link-cell"><a href="https://campus.shiyue.com" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">诗悦网络</td>
+            <td class="position-cell">平面设计 / UI设计 / 原画</td>
+            <td class="location-cell">广州</td>
+            <td class="deadline-cell warning">招满即止</td>
+            <td class="link-cell"><a href="https://campus.shiyue.com" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">闊堕煶绉戞妧</td>
-            <td class="position-cell">瑙嗚璁捐 / UI璁捐 / 瑙嗛璁捐</td>
-            <td class="location-cell">娣卞湷</td>
+            <td class="company-cell">韶音科技</td>
+            <td class="position-cell">视觉设计 / UI设计 / 视频设计</td>
+            <td class="location-cell">深圳</td>
             <td class="deadline-cell urgent">05-04</td>
-            <td class="link-cell"><a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="link-cell"><a href="https://app.mokahr.com/campus-recruitment/aftershokzhr/36940" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">椋炰簹杈剧簿瀵嗙鎶€</td>
-            <td class="position-cell">浜у搧璁捐甯堬紙宸ヤ笟璁捐鏂瑰悜锛?/td>
-            <td class="location-cell">娣卞湷</td>
-            <td class="deadline-cell safe">鎸佺画</td>
-            <td class="link-cell"><a href="https://Campus.fiyta.com.cn" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">飞亚达精密科技</td>
+            <td class="position-cell">产品设计师（工业设计方向）</td>
+            <td class="location-cell">深圳</td>
+            <td class="deadline-cell safe">持续</td>
+            <td class="link-cell"><a href="https://Campus.fiyta.com.cn" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">闆峰＋鐓ф槑</td>
-            <td class="position-cell">鐮斿彂鏂瑰悜锛堝伐涓氳璁?瑙嗚浼犺揪/鏁板瓧濯掍綋锛?/td>
-            <td class="location-cell">鎯犲窞</td>
-            <td class="deadline-cell safe">闈掕嫍璁″垝</td>
-            <td class="link-cell"><a href="https://wecruit.hotjob.cn/SU614cc33ebef57c54dcbc95af/pb/school.html" target="_blank">闈掕嫍璁″垝 鈫?/a></td>
+            <td class="company-cell">雷士照明</td>
+            <td class="position-cell">研发方向（工业设计/视觉传达/数字媒体）</td>
+            <td class="location-cell">惠州</td>
+            <td class="deadline-cell safe">青苗计划</td>
+            <td class="link-cell"><a href="https://wecruit.hotjob.cn/SU614cc33ebef57c54dcbc95af/pb/school.html" target="_blank">青苗计划 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">娣卞湷璋辩▼鏈潵绉戞妧</td>
-            <td class="position-cell">骞抽潰璁捐甯?/ 娓叉煋璁捐甯?/td>
-            <td class="location-cell">娣卞湷</td>
+            <td class="company-cell">深圳谱程未来科技</td>
+            <td class="position-cell">平面设计师 / 渲染设计师</td>
+            <td class="location-cell">深圳</td>
             <td class="deadline-cell safe">2026-04-17</td>
-            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">骞垮窞鍑柉鍗氳嚜琛岃溅</td>
-            <td class="position-cell">骞抽潰/涓夌淮鍏ㄨ兘璁捐甯?/td>
-            <td class="location-cell">骞垮窞</td>
+            <td class="company-cell">广州凯斯博自行车</td>
+            <td class="position-cell">平面/三维全能设计师</td>
+            <td class="location-cell">广州</td>
             <td class="deadline-cell safe">2026-04-22</td>
-            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">骞夸笢铻嶆嘲鑽笟</td>
-            <td class="position-cell">鐢靛晢瑙嗚璁捐瀹炰範鐢?/td>
-            <td class="location-cell">骞垮窞</td>
+            <td class="company-cell">广东融泰药业</td>
+            <td class="position-cell">电商视觉设计实习生</td>
+            <td class="location-cell">广州</td>
             <td class="deadline-cell safe">2026-04-24</td>
-            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="link-cell"><a href="https://m.yingjiesheng.com/h.php?word=%E8%A7%86%E8%A7%89%E4%BC%A0%E8%BE%BE%E8%AE%BE%E8%AE%A1" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鐎涙捣鏂囧寲</td>
-            <td class="position-cell">璁捐甯?/td>
-            <td class="location-cell">婢抽棬</td>
-            <td class="deadline-cell safe">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">婢崇澶у氨涓氱綉 鈫?/a></td>
+            <td class="company-cell">瀛海文化</td>
+            <td class="position-cell">设计师</td>
+            <td class="location-cell">澳门</td>
+            <td class="deadline-cell safe">全职</td>
+            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">澳科大就业网 →</a></td>
           </tr>
         </tbody>
       </table>
@@ -619,71 +620,71 @@ tr:hover td{background:#fafafa}
   </div>
 </section>
 
-<!-- 婢抽棬鏈湴 -->
+<!-- 澳门本地 -->
 <section class="container" id="macau">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃彌锔?婢抽棬鏈湴宀椾綅 <small>鏂囨梾 路 閰掑簵 路 浼氬睍 路 璁捐</small></div>
-      <div class="city-count">8 涓満浼?/div>
+      <div class="city-name">🏛️ 澳门本地岗位 <small>文旅 · 酒店 · 会展 · 设计</small></div>
+      <div class="city-count">8 个机会</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟/鏈烘瀯</th>
-            <th>宀椾綅</th>
-            <th>绫诲瀷</th>
-            <th>鏉ユ簮</th>
+            <th>企业/机构</th>
+            <th>岗位</th>
+            <th>类型</th>
+            <th>来源</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">婢抽棬绉戞妧澶у</td>
-            <td class="position-cell">鏁欐巿/鍓暀鎺?鍔╃悊鏁欐巿锛堜汉鏂囪壓鏈闄級</td>
-            <td class="location-cell">鏁欒亴</td>
-            <td class="link-cell"><a href="https://www.gaoxiaojob.com/company/detail/80848_a.html" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">澳门科技大学</td>
+            <td class="position-cell">教授/副教授/助理教授（人文艺术学院）</td>
+            <td class="location-cell">教职</td>
+            <td class="link-cell"><a href="https://www.gaoxiaojob.com/company/detail/80848_a.html" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">妯惔绮ゆ境娣卞害鍚堜綔鍖?路 婢崇澶у垱鏂扮鎶€鐮旂┒闄?/td>
-            <td class="position-cell">鐮旂┒鍛?璁捐甯?/td>
-            <td class="location-cell">绉戠爺</td>
-            <td class="link-cell"><a href="https://www.gaoxiaojob.com/company/detail/80848_a.html" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">横琴粤澳深度合作区 · 澳科大创新科技研究院</td>
+            <td class="position-cell">研究员/设计师</td>
+            <td class="location-cell">科研</td>
+            <td class="link-cell"><a href="https://www.gaoxiaojob.com/company/detail/80848_a.html" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鐝犳捣鏌忎俊鍟嗗姟鍜ㄨ</td>
-            <td class="position-cell">灞曡娲诲姩3D璁捐甯堬紙婢抽棬锛?/td>
-            <td class="location-cell">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpyuanlinjingguanshejixiangmu/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">珠海柏信商务咨询</td>
+            <td class="position-cell">展览活动3D设计师（澳门）</td>
+            <td class="location-cell">全职</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpyuanlinjingguanshejixiangmu/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鎸€€寤虹瓚</td>
-            <td class="position-cell">鏈虹數宸ョ▼甯堬紙璁捐鍙婂缓閫狅級</td>
-            <td class="location-cell">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpyuanlinjingguanshejixiangmu/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">振耀建筑</td>
+            <td class="position-cell">机电工程师（设计及建造）</td>
+            <td class="location-cell">全职</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpyuanlinjingguanshejixiangmu/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">澶т赴閾惰</td>
-            <td class="position-cell">璐告槗铻嶈祫钀ヨ繍缁忕悊 / 璐細閮ㄧ粡鐞?/td>
-            <td class="location-cell">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpdaxuejiaoshi/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">大丰银行</td>
+            <td class="position-cell">贸易融资营运经理 / 财会部经理</td>
+            <td class="location-cell">全职</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpdaxuejiaoshi/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">涓浗鐢典俊锛堟境闂級</td>
-            <td class="position-cell">瀹㈡埛缁忚惀涓氬姟涓荤</td>
-            <td class="location-cell">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpdaxuejiaoshi/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">中国电信（澳门）</td>
+            <td class="position-cell">客户经营业务主管</td>
+            <td class="location-cell">全职</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-macao/zpdaxuejiaoshi/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鐎涙捣鏂囧寲</td>
-            <td class="position-cell">璁捐甯?/td>
-            <td class="location-cell">鍏ㄨ亴</td>
-            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">婢崇澶у氨涓氱綉 鈫?/a></td>
+            <td class="company-cell">瀛海文化</td>
+            <td class="position-cell">设计师</td>
+            <td class="location-cell">全职</td>
+            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">澳科大就业网 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍗氳嫍鏈夐檺鍏徃</td>
-            <td class="position-cell">甯︿綅鍛橈紙鍏艰亴锛?/td>
-            <td class="location-cell">鍏艰亴</td>
-            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">婢崇澶у氨涓氱綉 鈫?/a></td>
+            <td class="company-cell">博苗有限公司</td>
+            <td class="position-cell">带位员（兼职）</td>
+            <td class="location-cell">兼职</td>
+            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">澳科大就业网 →</a></td>
           </tr>
         </tbody>
       </table>
@@ -691,15 +692,15 @@ tr:hover td{background:#fafafa}
   </div>
 </section>
 
-<!-- 姣忔棩鏂板宀椾綅閫熻 -->
+<!-- 每日新增岗位速览 -->
 <section class="container" id="daily-update">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃搮 浠婃棩鏂板宀椾綅閫熻 <small id="daily-date">姣忔棩鑷姩鏇存柊</small></div>
-      <div class="city-count" id="daily-count">鍔犺浇涓?..</div>
+      <div class="city-name">📅 今日新增岗位速览 <small id="daily-date">每日自动更新</small></div>
+      <div class="city-count" id="daily-count">加载中...</div>
     </div>
     <div class="table-wrap" id="daily-content">
-      <p style="text-align:center;padding:30px;color:#888;">鈴?姝ｅ湪鍔犺浇浠婃棩鎯呮姤...</p>
+      <p style="text-align:center;padding:30px;color:#888;">⏳ 正在加载今日情报...</p>
     </div>
   </div>
 </section>
@@ -719,674 +720,681 @@ tr:hover td{background:#fafafa}
       if(countEl) document.getElementById('daily-count').textContent = countEl.textContent;
     })
     .catch(e => {
-      document.getElementById('daily-content').innerHTML = '<p style="text-align:center;padding:30px;color:#888;">馃摤 浠婃棩鎯呮姤灏嗕簬姣忓ぉ鏃╀笂 7:00 鑷姩鏇存柊<br><small>瑕嗙洊绂忓缓鐪侊紙鍘﹂棬/绂忓窞/娉夊窞锛夊ぎ鍥戒紒銆佷簨涓氬崟浣嶃€佷笂甯傚叕鍙搞€佹柊鐗圭簿浼佷笟</small></p>';
+      document.getElementById('daily-content').innerHTML = '<p style="text-align:center;padding:30px;color:#888;">📬 今日情报将于每天早上 7:00 自动更新<br><small>覆盖福建省（厦门/福州/泉州）央国企、事业单位、上市公司、新特精企业</small></p>';
     });
 </script>
 
-<!-- 绂忓缓澶浗浼佷笓鍦?-->
+<!-- 福建央国企专场 -->
 <section class="container" id="fujian-cygq">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃彌锔?绂忓缓澶浗浼佷笓鍦?<small>鐪佸睘鍥戒紒 路 澶紒瀛愬叕鍙?路 2026灞婃牎鎷?/small></div>
-      <div class="city-count">6 瀹朵紒涓?/div>
+      <div class="city-name">🏛️ 福建央国企专场 <small>省属国企 · 央企子公司 · 2026届校招</small></div>
+      <div class="city-count">6 家企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>瀛﹀巻</th>
-            <th>鎴</th>
-            <th>鎶曢€?/th>
+            <th>企业</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>学历</th>
+            <th>截止</th>
+            <th>投递</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">绂忓缓鐪佹腐鍙ｉ泦鍥?br><small>锛堝帵闂ㄨ疆鑸?鍘﹁疆瀹㈡梾锛?/small></td>
-            <td class="position-cell">钀ヨ繍涓績涓氬姟鍛?br><small>鑹烘湳璁捐銆佽瑙変紶杈捐璁°€佹暟瀛楀獟浣撹壓鏈?/small></td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">鏈鍙婁互涓?/td>
-            <td class="deadline-cell warning">鎷涙弧鍗虫</td>
-            <td class="link-cell"><a href="mailto:891191@qq.com" target="_blank">鍙戦偖浠?鈫?/a><br><small>891191@qq.com</small></td>
+            <td class="company-cell">福建省港口集团<br><small>（厦门轮船/厦轮客旅）</small></td>
+            <td class="position-cell">营运中心业务员<br><small>艺术设计、视觉传达设计、数字媒体艺术</small></td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">本科及以上</td>
+            <td class="deadline-cell warning">招满即止</td>
+            <td class="link-cell"><a href="mailto:891191@qq.com" target="_blank">发邮件 →</a><br><small>891191@qq.com</small></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓鐪佹苯杞﹀伐涓氶泦鍥?br><small>锛堢姹介泦鍥⒙烽噾榫欐苯杞︼級</small></td>
-            <td class="position-cell">璁捐绠″煿鐢?/ 宸ヤ笟璁捐鏂瑰悜</td>
-            <td class="location-cell">绂忓窞/鍘﹂棬</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">2026鏍℃嫑杩涜涓?/td>
-            <td class="link-cell"><a href="mailto:hrjob@fjmotors.com.cn" target="_blank">閭鎶曢€?鈫?/a></td>
+            <td class="company-cell">福建省汽车工业集团<br><small>（福汽集团·金龙汽车）</small></td>
+            <td class="position-cell">设计管培生 / 工业设计方向</td>
+            <td class="location-cell">福州/厦门</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">2026校招进行中</td>
+            <td class="link-cell"><a href="mailto:hrjob@fjmotors.com.cn" target="_blank">邮箱投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓骞跨數缃戠粶闆嗗洟</td>
-            <td class="position-cell">灞曢璁捐 / 瑙嗚浼犺揪璁捐</td>
-            <td class="location-cell">绂忓窞/鍏ㄧ渷</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">福建广电网络集团</td>
+            <td class="position-cell">展馆设计 / 视觉传达设计</td>
+            <td class="location-cell">福州/全省</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">涓缓涓夊眬绗竴寤鸿宸ョ▼</td>
-            <td class="position-cell">瀹剁绫昏璁″矖<br><small>瑙嗚浼犺揪璁捐銆佸鍏疯璁′笌宸ョ▼</small></td>
-            <td class="location-cell">鍘﹂棬/绂忓窞</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://zhaopin.cscec3b.com.cn" target="_blank">鏍℃嫑瀹樼綉 鈫?/a></td>
+            <td class="company-cell">中建三局第一建设工程</td>
+            <td class="position-cell">家私类设计岗<br><small>视觉传达设计、家具设计与工程</small></td>
+            <td class="location-cell">厦门/福州</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://zhaopin.cscec3b.com.cn" target="_blank">校招官网 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬閾惰</td>
-            <td class="position-cell">2026灞婃槬瀛ｆ牎鎷涳紙澶氬矖浣嶅惈鑱岃兘锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">2026鏄ユ嫑</td>
-            <td class="link-cell"><a href="http://xmccb.zhaopin.com/" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">厦门银行</td>
+            <td class="position-cell">2026届春季校招（多岗位含职能）</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">2026春招</td>
+            <td class="link-cell"><a href="http://xmccb.zhaopin.com/" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓鎷涙爣闆嗗洟</td>
-            <td class="position-cell">椋庢櫙鍥灄 / 鍐滄枃鏃呰鍒掕璁″笀</td>
-            <td class="location-cell">绂忓窞/澶氬湴</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">鎷涙弧鍗虫</td>
-            <td class="link-cell"><a href="http://www.chinafjrc.com/zxxq_1544C0B3E69FA44F.shtml" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">福建招标集团</td>
+            <td class="position-cell">风景园林 / 农文旅规划设计师</td>
+            <td class="location-cell">福州/多地</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">招满即止</td>
+            <td class="link-cell"><a href="http://www.chinafjrc.com/zxxq_1544C0B3E69FA44F.shtml" target="_blank">详情 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="margin-top:20px;padding:14px 18px;background:#fff3e0;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 澶浗浼佹姇閫掑缓璁細</strong><br>
-      鈶?鍘﹁疆瀹㈡梾锛堥弓姹熶細瀹㈠巺椤圭洰锛変笌IP璁捐鏂瑰悜楂樺害濂戝悎锛屾姇閫掓椂鍙彁鍙婂楣睙鐮佸ご鏂囧寲鐨勪簡瑙ｅ拰IP璁捐缁忛獙锛?br>
-      鈶?绂忔苯闆嗗洟涓嬪睘閲戦緳姹借溅鍦ㄥ帵闂紝鏄浗浼佽璁″矖鐨勪紭璐ㄩ€夋嫨锛?br>
-      鈶?骞跨數缃戠粶鐨勫睍棣嗚璁℃柟鍚戦渶瑕佺┖闂磋璁¤兘鍔涳紝寤鸿琛ュ厖3D浣滃搧锛?br>
-      鈶?澶浗浼佺畝鍘嗗缓璁獊鍑烘斂娌婚潰璨岋紙鍥㈠憳/鍏氬憳锛夈€佸鐢熷共閮ㄧ粡鍘嗐€?    </div>
+      <strong>💡 央国企投递建议：</strong><br>
+      ① 厦轮客旅（鹭江会客厅项目）与IP设计方向高度契合，投递时可提及对鹭江码头文化的了解和IP设计经验；<br>
+      ② 福汽集团下属金龙汽车在厦门，是国企设计岗的优质选择；<br>
+      ③ 广电网络的展馆设计方向需要空间设计能力，建议补充3D作品；<br>
+      ④ 央国企简历建议突出政治面貌（团员/党员）、学生干部经历。
+    </div>
   </div>
 </section>
 
-<!-- 绂忓缓浜嬩笟鍗曚綅涓撳満 -->
+<!-- 福建事业单位专场 -->
 <section class="container" id="fujian-sydw">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃摐 绂忓缓浜嬩笟鍗曚綅涓撳満 <small>鐪佸睘浜嬩笟鍗曚綅 路 甯傚睘浜嬩笟鍗曚綅 路 2026灞婃嫑鑱?/small></div>
-      <div class="city-count">5 绫绘嫑鑱?/div>
+      <div class="city-name">📜 福建事业单位专场 <small>省属事业单位 · 市属事业单位 · 2026届招聘</small></div>
+      <div class="city-count">5 类招聘</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>鍗曚綅</th>
-            <th>宀椾綅绫诲瀷</th>
-            <th>涓撲笟瑕佹眰</th>
-            <th>鍩庡競</th>
-            <th>瀛﹀巻</th>
-            <th>鎶ュ悕鐘舵€?/th>
-            <th>鏉ユ簮</th>
+            <th>单位</th>
+            <th>岗位类型</th>
+            <th>专业要求</th>
+            <th>城市</th>
+            <th>学历</th>
+            <th>报名状态</th>
+            <th>来源</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">2026骞寸寤虹渷鐪佸睘浜嬩笟鍗曚綅</td>
-            <td class="position-cell">缁煎悎宀?/ 涓撴妧宀?/td>
-            <td class="location-cell">鑹烘湳璁捐绫伙紙閮ㄥ垎宀椾綅锛?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="location-cell">鏈鍙婁互涓?/td>
-            <td class="deadline-cell warning">宸插紑鑰冿紙鍏虫敞涓嬪崐骞达級</td>
-            <td class="link-cell"><a href="https://rst.fujian.gov.cn/zw/ztzl/zxzt/jygqxxzt/ydwzpxx/202603/t20260319_7113276.htm" target="_blank">鐪佷汉绀惧巺 鈫?/a></td>
+            <td class="company-cell">2026年福建省省属事业单位</td>
+            <td class="position-cell">综合岗 / 专技岗</td>
+            <td class="location-cell">艺术设计类（部分岗位）</td>
+            <td class="location-cell">福州</td>
+            <td class="location-cell">本科及以上</td>
+            <td class="deadline-cell warning">已开考（关注下半年）</td>
+            <td class="link-cell"><a href="https://rst.fujian.gov.cn/zw/ztzl/zxzt/jygqxxzt/ydwzpxx/202603/t20260319_7113276.htm" target="_blank">省人社厅 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓窞甯傛枃鍖栬壓鏈簨涓氬崟浣?/td>
-            <td class="position-cell">涓撲笟鎶€鏈矖</td>
-            <td class="location-cell">缇庢湳 / 璁捐绫?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">宸茬粨鏉熉峰叧娉ㄤ笅娆?/td>
-            <td class="link-cell"><small>绂忓窞甯備汉绀惧眬</small></td>
+            <td class="company-cell">福州市文化艺术事业单位</td>
+            <td class="position-cell">专业技术岗</td>
+            <td class="location-cell">美术 / 设计类</td>
+            <td class="location-cell">福州</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">已结束·关注下次</td>
+            <td class="link-cell"><small>福州市人社局</small></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬甯傚叕瀹夋枃鑱屼汉鍛樻湇鍔′腑蹇?/td>
-            <td class="position-cell">涓撲笟鎶€鏈矖</td>
-            <td class="location-cell">涓嶉檺</td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell safe">2025-08鍙戝竷</td>
-            <td class="link-cell"><small>鍘﹂棬浜虹ぞ灞€</small></td>
+            <td class="company-cell">厦门市公安文职人员服务中心</td>
+            <td class="position-cell">专业技术岗</td>
+            <td class="location-cell">不限</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell safe">2025-08发布</td>
+            <td class="link-cell"><small>厦门人社局</small></td>
           </tr>
           <tr>
-            <td class="company-cell">娉夊窞甯備簨涓氬崟浣?/td>
-            <td class="position-cell">缁煎悎宀?/ 涓撴妧宀?/td>
-            <td class="location-cell">涓嶉檺</td>
-            <td class="location-cell">娉夊窞</td>
-            <td class="location-cell">鏈</td>
-            <td class="deadline-cell warning">2026-03鎶ュ悕缁撴潫</td>
-            <td class="link-cell"><a href="https://www.gaoxiaojob.com/announcement/detail/387347.html" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">泉州市事业单位</td>
+            <td class="position-cell">综合岗 / 专技岗</td>
+            <td class="location-cell">不限</td>
+            <td class="location-cell">泉州</td>
+            <td class="location-cell">本科</td>
+            <td class="deadline-cell warning">2026-03报名结束</td>
+            <td class="link-cell"><a href="https://www.gaoxiaojob.com/announcement/detail/387347.html" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬甯傚崼鍋ュ鎵€灞炰簨涓氬崟浣?/td>
-            <td class="position-cell">涓撲笟鎶€鏈矖</td>
-            <td class="location-cell">涓嶉檺锛堥儴鍒嗙鐞嗗矖锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">纭曞＋涓轰富</td>
-            <td class="deadline-cell safe">2025-10鑷?2-19</td>
-            <td class="link-cell"><a href="https://www.yingjiesheng.com/job-007-747-361.html" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">厦门市卫健委所属事业单位</td>
+            <td class="position-cell">专业技术岗</td>
+            <td class="location-cell">不限（部分管理岗）</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">硕士为主</td>
+            <td class="deadline-cell safe">2025-10至12-19</td>
+            <td class="link-cell"><a href="https://www.yingjiesheng.com/job-007-747-361.html" target="_blank">详情 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="margin-top:20px;padding:14px 18px;background:#f8f9fa;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 浜嬩笟鍗曚綅澶囪€冨缓璁細</strong><br>
-      鈶?绂忓缓浜嬩笟鍗曚綅鑰冭瘯鍐呭涓?缁煎悎鍩虹鐭ヨ瘑"锛屽寘鍚斂娌汇€佹硶寰嬨€佺粡娴庛€佺鐞嗐€佺鎶€銆佷汉鏂囥€佺渷鎯呯瓑锛?br>
-      鈶?绗旇瘯鏃堕棿閫氬父涓?鏈堝拰9鏈堬紝涓嬪崐骞磋繕鏈変竴娆＄粺鑰冿紱<br>
-      鈶?浜嬩笟鍗曚綅鑱旇€冩姤鍚嶅钩鍙帮細<a href="https://www.fj99.org.cn" target="_blank">绂忓缓灏变笟缃?/a>锛?br>
-      鈶?鑹烘湳璁捐绫诲矖浣嶅湪浜嬩笟鍗曚綅涓涓烘枃鍖栭銆佸崥鐗╅銆佸浼犻儴闂紝闇€瀵嗗垏鍏虫敞鍚勫湴鏂囨梾灞€鎷涜仒銆?    </div>
+      <strong>💡 事业单位备考建议：</strong><br>
+      ① 福建事业单位考试内容为"综合基础知识"，包含政治、法律、经济、管理、科技、人文、省情等；<br>
+      ② 笔试时间通常为4月和9月，下半年还有一次统考；<br>
+      ③ 事业单位联考报名平台：<a href="https://www.fj99.org.cn" target="_blank">福建就业网</a>；<br>
+      ④ 艺术设计类岗位在事业单位中多为文化馆、博物馆、宣传部门，需密切关注各地文旅局招聘。
+    </div>
   </div>
 </section>
 
-<!-- 绂忓缓涓婂競鍏徃涓撳満 -->
+<!-- 福建上市公司专场 -->
 <section class="container" id="fujian-ssgs">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃搱 绂忓缓澶у瀷涓婂競鍏徃涓撳満 <small>鏂拌兘婧?路 娓告垙 路 閫氫俊 路 浜掕仈缃?路 2026灞婃牎鎷?/small></div>
-      <div class="city-count">8 瀹朵紒涓?/div>
+      <div class="city-name">📈 福建大型上市公司专场 <small>新能源 · 游戏 · 通信 · 互联网 · 2026届校招</small></div>
+      <div class="city-count">8 家企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>琛屼笟</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>钖祫</th>
-            <th>鎴</th>
-            <th>鎶曢€?/th>
+            <th>企业</th>
+            <th>行业</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>薪资</th>
+            <th>截止</th>
+            <th>投递</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">鍘﹂棬鏂拌兘瀹?br><small>锛圓mpace路ATL/CATL鍚堣祫锛?/small></td>
-            <td class="location-cell">鏂拌兘婧愮數姹?/td>
-            <td class="position-cell">璁捐/鍝佺墝宀楋紙鍌ㄥ锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
+            <td class="company-cell">厦门新能安<br><small>（Ampace·ATL/CATL合资）</small></td>
+            <td class="location-cell">新能源电池</td>
+            <td class="position-cell">设计/品牌岗（储备）</td>
+            <td class="location-cell">厦门</td>
             <td class="location-cell">5K-10K</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://ampace.hotjob.cn" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://ampace.hotjob.cn" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂挩鏂拌兘婧?br><small>锛?88778路绉戝垱鏉夸笂甯傦級</small></td>
-            <td class="location-cell">鏂拌兘婧愭潗鏂?/td>
-            <td class="position-cell">鍝佺墝/璁捐宀?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><small>绂忓缓灏变笟骞冲彴</small></td>
+            <td class="company-cell">厦钨新能源<br><small>（688778·科创板上市）</small></td>
+            <td class="location-cell">新能源材料</td>
+            <td class="position-cell">品牌/设计岗</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><small>福建就业平台</small></td>
           </tr>
           <tr>
-            <td class="company-cell">椋為奔绉戞妧</td>
-            <td class="location-cell">娓告垙</td>
-            <td class="position-cell">UI璁捐锛堟父鎴忕晫闈級</td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://www.feiyu.com" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">飞鱼科技</td>
+            <td class="location-cell">游戏</td>
+            <td class="position-cell">UI设计（游戏界面）</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://www.feiyu.com" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">浜胯仈缃戠粶</td>
-            <td class="location-cell">閫氫俊璁惧</td>
-            <td class="position-cell">瑙嗚璁捐甯?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://yealink.zhiye.com/Campus" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">亿联网络</td>
+            <td class="location-cell">通信设备</td>
+            <td class="position-cell">视觉设计师</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://yealink.zhiye.com/Campus" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">4399娓告垙</td>
-            <td class="location-cell">娓告垙</td>
-            <td class="position-cell">鍒涙剰瑙嗚璁捐甯?/td>
-            <td class="location-cell">骞垮窞/鍘﹂棬</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://web.4399.com/campus/" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">4399游戏</td>
+            <td class="location-cell">游戏</td>
+            <td class="position-cell">创意视觉设计师</td>
+            <td class="location-cell">广州/厦门</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://web.4399.com/campus/" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">濂硅叮/娴疯惫闆嗗洟</td>
-            <td class="location-cell">浜掕仈缃戠ぞ浜?/td>
-            <td class="position-cell">瑙嗚璁捐 / UI璁捐</td>
-            <td class="location-cell">鍘﹂棬/娣卞湷</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell warning">05-30鎴</td>
-            <td class="link-cell"><a href="https://www.taqu.cn/recruit" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">她趣/海豹集团</td>
+            <td class="location-cell">互联网社交</td>
+            <td class="position-cell">视觉设计 / UI设计</td>
+            <td class="location-cell">厦门/深圳</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell warning">05-30截止</td>
+            <td class="link-cell"><a href="https://www.taqu.cn/recruit" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">瀹濆疂宸村＋</td>
-            <td class="location-cell">鍎跨鏁欒偛/鏂囧垱</td>
-            <td class="position-cell">璧勬繁骞抽潰璁捐甯堬紙瀹炰綋浜у搧锛?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="location-cell">10-20K路13钖?/td>
-            <td class="deadline-cell safe">缁忛獙涓嶉檺</td>
-            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">宝宝巴士</td>
+            <td class="location-cell">儿童教育/文创</td>
+            <td class="position-cell">资深平面设计师（实体产品）</td>
+            <td class="location-cell">福州</td>
+            <td class="location-cell">10-20K·13薪</td>
+            <td class="deadline-cell safe">经验不限</td>
+            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍗庢鼎涓囧</td>
-            <td class="location-cell">闆跺敭澶紒</td>
-            <td class="position-cell">UI璁捐绠＄悊鍩硅鐢?/td>
-            <td class="location-cell">鍘﹂棬/澶氬煄甯?/td>
-            <td class="location-cell">闈㈣</td>
-            <td class="deadline-cell safe">2026鏄ユ嫑</td>
-            <td class="link-cell"><a href="https://runjob.crc.com.cn" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">华润万家</td>
+            <td class="location-cell">零售央企</td>
+            <td class="position-cell">UI设计管理培训生</td>
+            <td class="location-cell">厦门/多城市</td>
+            <td class="location-cell">面议</td>
+            <td class="deadline-cell safe">2026春招</td>
+            <td class="link-cell"><a href="https://runjob.crc.com.cn" target="_blank">投递 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="margin-top:20px;padding:14px 18px;background:#e3f2fd;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 涓婂競鍏徃鎶曢€掑缓璁細</strong><br>
-      鈶?浜胯仈缃戠粶鏄帵闂ㄧ煡鍚嶉€氫俊璁惧鍑烘捣榫欏ご锛岃璁″矖鍋忓悜浜у搧UI鍜屽搧鐗岃瑙夛紱<br>
-      鈶?椋為奔绉戞妧鍜?399鏄帵闂ㄦ父鎴忎骇涓氫唬琛紝閫傚悎鏈夋父鎴廢I/鍘熺敾鏂瑰悜浣滃搧鐨勫簲灞婄敓锛?br>
-      鈶?瀹濆疂宸村＋鍦ㄧ宸烇紝鏄枃鍒?鏁欒偛璧涢亾锛屽勾钖彲杈?0-20K路13钖紱<br>
-      鈶?濂硅叮/娴疯惫闆嗗洟璁捐宀楀湪娣卞湷锛屽帵闂ㄦ湁甯傚満/杩愯惀宀椼€?    </div>
+      <strong>💡 上市公司投递建议：</strong><br>
+      ① 亿联网络是厦门知名通信设备出海龙头，设计岗偏向产品UI和品牌视觉；<br>
+      ② 飞鱼科技和4399是厦门游戏产业代表，适合有游戏UI/原画方向作品的应届生；<br>
+      ③ 宝宝巴士在福州，是文创+教育赛道，年薪可达10-20K·13薪；<br>
+      ④ 她趣/海豹集团设计岗在深圳，厦门有市场/运营岗。
+    </div>
   </div>
 </section>
 
-<!-- 绂忓缓鏂扮壒绮句紒涓氫笓鍦?-->
+<!-- 福建新特精企业专场 -->
 <section class="container" id="fujian-xtj">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">鈿?绂忓缓鏂扮壒绮撅紙涓撶簿鐗规柊锛変紒涓氫笓鍦?<small>鍥藉绾ч珮鏂?路 涓撶簿鐗规柊灏忓法浜?路 2026灞婃牎鎷?/small></div>
-      <div class="city-count">5 瀹朵紒涓?/div>
+      <div class="city-name">⚡ 福建新特精（专精特新）企业专场 <small>国家级高新 · 专精特新小巨人 · 2026届校招</small></div>
+      <div class="city-count">5 家企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>浼佷笟璧勮川</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>钖祫</th>
-            <th>鎶曢€掓笭閬?/th>
+            <th>企业</th>
+            <th>企业资质</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>薪资</th>
+            <th>投递渠道</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">鍘﹂棬璧涘皵鐗圭數瀛?/td>
-            <td class="location-cell">涓撶簿鐗规柊浼佷笟<br>涓婂競鍏徃</td>
-            <td class="position-cell">璁捐/鍝佺墝宀?/td>
-            <td class="location-cell">鍘﹂棬</td>
+            <td class="company-cell">厦门赛尔特电子</td>
+            <td class="location-cell">专精特新企业<br>上市公司</td>
+            <td class="position-cell">设计/品牌岗</td>
+            <td class="location-cell">厦门</td>
             <td class="location-cell">7-10K</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-xiamen/zpyjsssb8a4w/" target="_blank">鐚庤仒 鈫?/a></td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-xiamen/zpyjsssb8a4w/" target="_blank">猎聘 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬鏂拌兘瀹?br><small>锛圓mpace锛?/small></td>
-            <td class="location-cell">鍥藉绾ч珮鏂版妧鏈紒涓?br>ATL/CATL鍚堣祫</td>
-            <td class="position-cell">鍝佺墝/璁捐鍌ㄥ</td>
-            <td class="location-cell">鍘﹂棬</td>
+            <td class="company-cell">厦门新能安<br><small>（Ampace）</small></td>
+            <td class="location-cell">国家级高新技术企业<br>ATL/CATL合资</td>
+            <td class="position-cell">品牌/设计储备</td>
+            <td class="location-cell">厦门</td>
             <td class="location-cell">5.5K-10K</td>
-            <td class="link-cell"><a href="https://ampace.hotjob.cn" target="_blank">鍥藉灏变笟骞冲彴 鈫?/a></td>
+            <td class="link-cell"><a href="https://ampace.hotjob.cn" target="_blank">国家就业平台 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂挩鏂拌兘婧?br><small>锛?88778锛?/small></td>
-            <td class="location-cell">鍥藉涓撶簿鐗规柊灏忓法浜?br>绉戝垱鏉夸笂甯?/td>
-            <td class="position-cell">鍝佺墝/璁捐宀?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="link-cell"><small>绂忓缓灏变笟骞冲彴</small></td>
+            <td class="company-cell">厦钨新能源<br><small>（688778）</small></td>
+            <td class="location-cell">国家专精特新小巨人<br>科创板上市</td>
+            <td class="position-cell">品牌/设计岗</td>
+            <td class="location-cell">厦门</td>
+            <td class="location-cell">面议</td>
+            <td class="link-cell"><small>福建就业平台</small></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬濂硅叮/娴疯惫闆嗗洟</td>
-            <td class="location-cell">浜掕仈缃態杞瀺璧?br>楂樻柊鎶€鏈紒涓?/td>
-            <td class="position-cell">瑙嗚璁捐 / UI璁捐</td>
-            <td class="location-cell">鍘﹂棬/娣卞湷</td>
-            <td class="location-cell">闈㈣</td>
-            <td class="link-cell"><a href="https://www.taqu.cn/recruit" target="_blank">瓒呯骇绠€鍘?鈫?/a></td>
+            <td class="company-cell">厦门她趣/海豹集团</td>
+            <td class="location-cell">互联网B轮融资<br>高新技术企业</td>
+            <td class="position-cell">视觉设计 / UI设计</td>
+            <td class="location-cell">厦门/深圳</td>
+            <td class="location-cell">面议</td>
+            <td class="link-cell"><a href="https://www.taqu.cn/recruit" target="_blank">超级简历 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬寰禌缃戠粶绉戞妧</td>
-            <td class="location-cell">楂樻柊鎶€鏈紒涓?/td>
-            <td class="position-cell">璁捐/瑙嗚宀楋紙搴斿眾鐢燂級</td>
-            <td class="location-cell">鍘﹂棬</td>
+            <td class="company-cell">厦门微赛网络科技</td>
+            <td class="location-cell">高新技术企业</td>
+            <td class="position-cell">设计/视觉岗（应届生）</td>
+            <td class="location-cell">厦门</td>
             <td class="location-cell">6-8K</td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-xiamen/zpyjsssb8a4w/" target="_blank">鐚庤仒 鈫?/a></td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-xiamen/zpyjsssb8a4w/" target="_blank">猎聘 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="margin-top:20px;padding:14px 18px;background:#e8f5e9;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 鏂扮壒绮句紒涓氫紭鍔匡細</strong><br>
-      鈶?涓撶簿鐗规柊浼佷笟閫氬父鏈夋斂搴滀汉鎵嶈ˉ璐达紝鍘﹂棬鏈搴斿眾鐢熷彲棰嗗彇<strong>1涓囧厓鏂板紩杩涗汉鎵嶈ˉ璐?/strong>锛?br>
-      鈶?璧涘皵鐗圭數瀛愩€佹柊鑳藉畨銆佸帵閽ㄦ柊鑳芥簮鍧囨湁"涓冮櫓浜岄噾"鎴?鍏櫓涓€閲?绂忓埄锛?br>
-      鈶?鏂扮壒绮句紒涓氭垚闀跨┖闂村ぇ锛岄€傚悎鎰挎剰浼撮殢浼佷笟蹇€熷彂灞曠殑搴斿眾鐢燂紱<br>
-      鈶?鍘﹂棬浜虹ぞ灞€鎻愪緵绉熸埧琛ヨ创1涓?骞疵?骞达紝姹傝亴鏈熼棿鍙敵璇烽潚骞翠汉鎵嶅叕瀵撱€?    </div>
+      <strong>💡 新特精企业优势：</strong><br>
+      ① 专精特新企业通常有政府人才补贴，厦门本科应届生可领取<strong>1万元新引进人才补贴</strong>；<br>
+      ② 赛尔特电子、新能安、厦钨新能源均有"七险二金"或"六险一金"福利；<br>
+      ③ 新特精企业成长空间大，适合愿意伴随企业快速发展的应届生；<br>
+      ④ 厦门人社局提供租房补贴1万/年×3年，求职期间可申请青年人才公寓。
+    </div>
   </div>
 </section>
 
-<!-- 绂忓缓/鍘﹂棬缁煎悎涓撳満锛堜繚鐣欏師鏈夛級 -->
+<!-- 福建/厦门综合专场（保留原有） -->
 <section class="container" id="fujian">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃寠 绂忓缓/鍘﹂棬涓撳満 <small>绂忓窞 路 鍘﹂棬 路 娉夊窞 路 鏍℃嫑璁捐宀?/small></div>
-      <div class="city-count">6 瀹舵牎鎷涗紒涓?/div>
+      <div class="city-name">🌊 福建/厦门专场 <small>福州 · 厦门 · 泉州 · 校招设计岗</small></div>
+      <div class="city-count">6 家校招企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>鎴</th>
-            <th>鎶曢€?/th>
+            <th>企业</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>截止</th>
+            <th>投递</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">鍘﹂棬椋為奔绉戞妧</td>
-            <td class="position-cell">UI璁捐锛?026鏍℃嫑路娓告垙鐣岄潰锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="deadline-cell safe">2026鏍℃嫑杩涜涓?/td>
-            <td class="link-cell"><a href="https://www.feiyu.com" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">厦门飞鱼科技</td>
+            <td class="position-cell">UI设计（2026校招·游戏界面）</td>
+            <td class="location-cell">厦门</td>
+            <td class="deadline-cell safe">2026校招进行中</td>
+            <td class="link-cell"><a href="https://www.feiyu.com" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬浜胯仈缃戠粶</td>
-            <td class="position-cell">瑙嗚璁捐甯堬紙鏍℃嫑锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="deadline-cell safe">鏍℃嫑杩涜涓?/td>
-            <td class="link-cell"><a href="https://yealink.zhiye.com/Campus" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">厦门亿联网络</td>
+            <td class="position-cell">视觉设计师（校招）</td>
+            <td class="location-cell">厦门</td>
+            <td class="deadline-cell safe">校招进行中</td>
+            <td class="link-cell"><a href="https://yealink.zhiye.com/Campus" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">4399娓告垙</td>
-            <td class="position-cell">鍒涙剰瑙嗚璁捐甯堬紙鏍℃嫑锛?/td>
-            <td class="location-cell">骞垮窞/鍘﹂棬</td>
-            <td class="deadline-cell safe">鏍℃嫑杩涜涓?/td>
-            <td class="link-cell"><a href="https://web.4399.com/campus/" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">4399游戏</td>
+            <td class="position-cell">创意视觉设计师（校招）</td>
+            <td class="location-cell">广州/厦门</td>
+            <td class="deadline-cell safe">校招进行中</td>
+            <td class="link-cell"><a href="https://web.4399.com/campus/" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍗庢鼎涓囧</td>
-            <td class="position-cell">UI璁捐绠＄悊鍩硅鐢燂紙鍘﹂棬鏈夊矖锛?/td>
-            <td class="location-cell">鍘﹂棬/澶氬煄甯?/td>
-            <td class="deadline-cell safe">2026鏄ユ嫑</td>
-            <td class="link-cell"><a href="https://runjob.crc.com.cn" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">华润万家</td>
+            <td class="position-cell">UI设计管理培训生（厦门有岗）</td>
+            <td class="location-cell">厦门/多城市</td>
+            <td class="deadline-cell safe">2026春招</td>
+            <td class="link-cell"><a href="https://runjob.crc.com.cn" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鏅鸿仒榧犳牎鎷?/td>
-            <td class="position-cell">瑙嗚璁捐甯堬紙鏍℃嫑锛?/td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="deadline-cell safe">鏍℃嫑杩涜涓?/td>
-            <td class="link-cell"><a href="https://www.shushuqiuzhi.com/position/280059" target="_blank">鎶曢€?鈫?/a></td>
+            <td class="company-cell">智聘鼠校招</td>
+            <td class="position-cell">视觉设计师（校招）</td>
+            <td class="location-cell">厦门</td>
+            <td class="deadline-cell safe">校招进行中</td>
+            <td class="link-cell"><a href="https://www.shushuqiuzhi.com/position/280059" target="_blank">投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓骞跨數缃戠粶闆嗗洟</td>
-            <td class="position-cell">灞曢璁捐/瑙嗚浼犺揪璁捐锛?026鏍℃嫑锛?/td>
-            <td class="location-cell">绂忓窞/绂忓缓</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">福建广电网络集团</td>
+            <td class="position-cell">展馆设计/视觉传达设计（2026校招）</td>
+            <td class="location-cell">福州/福建</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">瀹濆疂宸村＋</td>
-            <td class="position-cell">璧勬繁骞抽潰璁捐甯堬紙瀹炰綋浜у搧锛?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">缁忛獙涓嶉檺路鏈</td>
-            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">宝宝巴士</td>
+            <td class="position-cell">资深平面设计师（实体产品）</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">经验不限·本科</td>
+            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍘﹂棬閾惰</td>
-            <td class="position-cell">2026灞婃槬瀛ｆ牎鍥嫑鑱橈紙澶氬矖浣嶏級</td>
-            <td class="location-cell">鍘﹂棬</td>
-            <td class="deadline-cell safe">2026鏄ユ嫑</td>
-            <td class="link-cell"><a href="http://xmccb.zhaopin.com/" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">厦门银行</td>
+            <td class="position-cell">2026届春季校园招聘（多岗位）</td>
+            <td class="location-cell">厦门</td>
+            <td class="deadline-cell safe">2026春招</td>
+            <td class="link-cell"><a href="http://xmccb.zhaopin.com/" target="_blank">官网投递 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     
     <div style="margin-top:20px;padding:14px 18px;background:#f8f9fa;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 绂忓缓/鍘﹂棬姹傝亴鎻愮ず锛?/strong><br>
-      鈶?鍘﹂棬娓告垙浜т笟鍙戣揪锛堥楸笺€?399绛夛級锛岄€傚悎瑙嗚/UI/鍘熺敾鏂瑰悜锛?br>
-      鈶?绂忓窞鏈夊疂瀹濆反澹瓑鏂囧垱/鏁欒偛绫讳紒涓氾紝閫傚悎鍝佺墝/骞抽潰璁捐锛?br>
-      鈶?绂忓缓骞跨數缃戠粶涓哄浗浼侊紝灞曢璁捐鏂瑰悜绋冲畾锛?br>
-      鈶?鍗庢鼎涓囧鍘﹂棬鏈塙I璁捐绠″煿宀楋紝澶у瀷闆跺敭鍝佺墝浣撶郴瀹屽杽锛?br>
-      鈶?鍘﹂棬浜烘墠缃戠瓑鏈湴骞冲彴鍙ˉ鍏呮悳绱細xmrc.com.cn
+      <strong>💡 福建/厦门求职提示：</strong><br>
+      ① 厦门游戏产业发达（飞鱼、4399等），适合视觉/UI/原画方向；<br>
+      ② 福州有宝宝巴士等文创/教育类企业，适合品牌/平面设计；<br>
+      ③ 福建广电网络为国企，展馆设计方向稳定；<br>
+      ④ 华润万家厦门有UI设计管培岗，大型零售品牌体系完善；<br>
+      ⑤ 厦门人才网等本地平台可补充搜索：xmrc.com.cn
     </div>
   </div>
 </section>
 
-<!-- 绂忓窞/娉夊窞涓撳満 -->
+<!-- 福州/泉州专场 -->
 <section class="container" id="fuzhou">
   <div class="city-section">
     <div class="city-header">
-      <div class="city-name">馃彌锔?绂忓窞/娉夊窞涓撳満 <small>绂忓窞 路 娉夊窞 路 鏍℃嫑璁捐宀?/small></div>
-      <div class="city-count">6 瀹舵牎鎷涗紒涓?/div>
+      <div class="city-name">🏛️ 福州/泉州专场 <small>福州 · 泉州 · 校招设计岗</small></div>
+      <div class="city-count">6 家校招企业</div>
     </div>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th>浼佷笟</th>
-            <th>宀椾綅</th>
-            <th>鍩庡競</th>
-            <th>鎴</th>
-            <th>鎶曢€?/th>
+            <th>企业</th>
+            <th>岗位</th>
+            <th>城市</th>
+            <th>截止</th>
+            <th>投递</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="company-cell">瀹濆疂宸村＋</td>
-            <td class="position-cell">璧勬繁骞抽潰璁捐甯堬紙瀹炰綋浜у搧锛壜?鏍℃嫑</td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">缁忛獙涓嶉檺路鏈</td>
-            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">宝宝巴士</td>
+            <td class="position-cell">资深平面设计师（实体产品）· 校招</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">经验不限·本科</td>
+            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓骞跨數缃戠粶闆嗗洟</td>
-            <td class="position-cell">灞曢璁捐 / 瑙嗚浼犺揪璁捐锛?026鏍℃嫑锛?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">瀹樼綉鎶曢€?鈫?/a></td>
+            <td class="company-cell">福建广电网络集团</td>
+            <td class="position-cell">展馆设计 / 视觉传达设计（2026校招）</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://www.fjgdwl.com/" target="_blank">官网投递 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓窞涔呰瘹骞垮憡浼犲獟</td>
-            <td class="position-cell">骞抽潰璁捐甯堬紙搴斿眾鐢?瀹炰範鐢燂級</td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">缁忛獙涓嶉檺路鏈</td>
-            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">福州久诚广告传媒</td>
+            <td class="position-cell">平面设计师（应届生/实习生）</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">经验不限·本科</td>
+            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓缓涔愯揪鍩庤建浼犲獟</td>
-            <td class="position-cell">骞抽潰璁捐甯堬紙鏍℃嫑锛?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">2026鏍℃嫑</td>
-            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">福建乐达城轨传媒</td>
+            <td class="position-cell">平面设计师（校招）</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">2026校招</td>
+            <td class="link-cell"><a href="https://babybus.zhiye.com/campus" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绾㈡槦涓簮闆嗗洟</td>
-            <td class="position-cell">楂樼骇鍝佺墝瑙嗚璁捐甯堬紙鍙繙绋嬶級</td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">2骞翠互涓娐锋湰绉?/td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">红星中源集团</td>
+            <td class="position-cell">高级品牌视觉设计师（可远程）</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">2年以上·本科</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">绂忓窞椋炵壒鐟炵綉缁?/td>
-            <td class="position-cell">璺ㄥ鐢靛晢瑙嗚璁捐甯?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">1-3骞绰峰ぇ涓?/td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">福州飞特瑞网络</td>
+            <td class="position-cell">跨境电商视觉设计师</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">1-3年·大专</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">鍚嶆父浜掑姩锛堢宸烇級</td>
-            <td class="position-cell">娓告垙UI鐣岄潰璁捐甯?/td>
-            <td class="location-cell">绂忓窞</td>
-            <td class="deadline-cell safe">1-3骞绰峰ぇ涓?/td>
-            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">璇︽儏 鈫?/a></td>
+            <td class="company-cell">名游互动（福州）</td>
+            <td class="position-cell">游戏UI界面设计师</td>
+            <td class="location-cell">福州</td>
+            <td class="deadline-cell safe">1-3年·大专</td>
+            <td class="link-cell"><a href="https://www.liepin.com/city-fuzhou/zpuisjsjs/" target="_blank">详情 →</a></td>
           </tr>
           <tr>
-            <td class="company-cell">娉夊窞甯傚箍鎾數瑙嗗彴</td>
-            <td class="position-cell">铻嶅獟浣撳浼犺璁″疄涔犵敓锛堝彲杞锛?/td>
-            <td class="location-cell">娉夊窞</td>
-            <td class="deadline-cell safe">婊氬姩鎷涜仒</td>
-            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">婢崇澶у氨涓氱綉 鈫?/a></td>
+            <td class="company-cell">泉州市广播电视台</td>
+            <td class="position-cell">融媒体宣传设计实习生（可转正）</td>
+            <td class="location-cell">泉州</td>
+            <td class="deadline-cell safe">滚动招聘</td>
+            <td class="link-cell"><a href="https://www.must.edu.mo/cecp/student" target="_blank">澳科大就业网 →</a></td>
           </tr>
         </tbody>
       </table>
     </div>
     
     <div style="margin-top:20px;padding:14px 18px;background:#f8f9fa;border-radius:8px;font-size:13px;color:#666;line-height:1.8">
-      <strong>馃挕 绂忓窞/娉夊窞姹傝亴鎻愮ず锛?/strong><br>
-      鈶?绂忓窞瀹濆疂宸村＋锛圕杞?000-2000浜猴級鏄枃鍒?鏁欒偛澶撮儴浼佷笟锛屽钩闈㈣璁″笀骞磋柂鍙揪10-20K路13钖紱<br>
-      鈶?绂忓缓骞跨數缃戠粶闆嗗洟涓虹渷灞炲浗浼侊紝灞曢璁捐鍜岃瑙変紶杈惧矖浣嶇ǔ瀹氫笖鏈夌紪鍒跺彲鑳斤紱<br>
-      鈶?绂忓窞娓告垙浜т笟閫愭宕涜捣锛屽悕娓镐簰鍔ㄧ瓑浼佷笟鎻愪緵娓告垙UI璁捐宀椾綅锛?br>
-      鈶?绾㈡槦涓簮闆嗗洟鎺ュ彈杩滅▼鍔炲叕锛岄€傚悎甯屾湜鐏垫椿鍔炲叕鐨勫簲灞婄敓锛?br>
-      鈶?娉夊窞鏄晠涔★紝骞跨數铻嶅獟浣撲腑蹇冨疄涔犺浆姝ｉ€氶亾鍙嬪ソ锛?br>
-      鈶?鏈湴骞冲彴琛ュ厖鎼滅储锛氫腑鍥芥捣宄′汉鎵嶇綉 hxrc.com銆佺寤虹渷浜嬩笟鍗曚綅鎷涜仒骞冲彴銆?    </div>
+      <strong>💡 福州/泉州求职提示：</strong><br>
+      ① 福州宝宝巴士（C轮·1000-2000人）是文创/教育头部企业，平面设计师年薪可达10-20K·13薪；<br>
+      ② 福建广电网络集团为省属国企，展馆设计和视觉传达岗位稳定且有编制可能；<br>
+      ③ 福州游戏产业逐步崛起，名游互动等企业提供游戏UI设计岗位；<br>
+      ④ 红星中源集团接受远程办公，适合希望灵活办公的应届生；<br>
+      ⑤ 泉州是故乡，广电融媒体中心实习转正通道友好；<br>
+      ⑥ 本地平台补充搜索：中国海峡人才网 hxrc.com、福建省事业单位招聘平台。
+    </div>
   </div>
 </section>
 
-<!-- 鏍℃嫑鏃ュ巻 -->
+<!-- 校招日历 -->
 <section class="container" id="calendar">
-  <h2 class="section-title">馃搮 鏍℃嫑鏃ュ巻 路 鎴鎻愰啋</h2>
+  <h2 class="section-title">📅 校招日历 · 截止提醒</h2>
   <div class="job-grid">
     <div class="job-card urgent">
       <div class="job-header">
-        <div class="job-title">鈿狅笍 宸茶繃鎴 路 闊堕煶绉戞妧</div>
+        <div class="job-title">⚠️ 已过截止 · 韶音科技</div>
       </div>
-      <div class="job-desc">瑙嗚璁捐绠″煿鐢熴€乁I璁捐甯堛€佽棰戣璁″笀銆佷笁缁存覆鏌撹璁″笀銆?026-05-04宸叉埅姝€?/div>
+      <div class="job-desc">视觉设计管培生、UI设计师、视频设计师、三维渲染设计师。2026-05-04已截止。</div>
       <div class="job-footer">
-        <div class="job-meta">鍙叧娉ㄧ鎷涜ˉ褰曟垨2027灞婃彁鍓嶆壒</div>
+        <div class="job-meta">可关注秋招补录或2027届提前批</div>
       </div>
     </div>
     <div class="job-card urgent">
       <div class="job-header">
-        <div class="job-title">鈿狅笍 宸茶繃鎴 路 鍗庝笌鍗庢槬鎷?/div>
+        <div class="job-title">⚠️ 已过截止 · 华与华春招</div>
       </div>
-      <div class="job-desc">鍝佺墝璁捐銆佺瓥鐣ョ爺绌躲€佹枃妗堝垱鎰忋€侀」鐩墽琛屻€?026-04-30宸叉埅姝€?/div>
+      <div class="job-desc">品牌设计、策略研究、文案创意、项目执行。2026-04-30已截止。</div>
       <div class="job-footer">
-        <div class="job-meta">涓婃捣 路 鍙叧娉ㄦ棩甯稿疄涔犺浆姝?/div>
+        <div class="job-meta">上海 · 可关注日常实习转正</div>
       </div>
     </div>
     <div class="job-card warning">
       <div class="job-header">
-        <div class="job-title">鈴?鍗冲皢鎴 路 璇楁偊缃戠粶</div>
+        <div class="job-title">⏳ 即将截止 · 诗悦网络</div>
       </div>
-      <div class="job-desc">骞抽潰璁捐銆乁I璁捐銆佸師鐢汇€傛嫑婊″嵆姝紝寤鸿灏藉揩鎶曢€掋€?/div>
+      <div class="job-desc">平面设计、UI设计、原画。招满即止，建议尽快投递。</div>
       <div class="job-footer">
-        <div class="job-meta">骞垮窞 路 鎷涙弧鍗虫</div>
+        <div class="job-meta">广州 · 招满即止</div>
         <div class="job-actions">
-          <a href="https://www.wondercv.com/xiaozhao/shiyue-network-2026-spring-guangzhou-8810-077eda/" target="_blank" class="btn btn-primary btn-sm">鎶曢€?/a>
+          <a href="https://www.wondercv.com/xiaozhao/shiyue-network-2026-spring-guangzhou-8810-077eda/" target="_blank" class="btn btn-primary btn-sm">投递</a>
         </div>
       </div>
     </div>
     <div class="job-card safe">
       <div class="job-header">
-        <div class="job-title">馃煝 鎸佺画鎷涜仒 路 寰楀姏闆嗗洟</div>
+        <div class="job-title">🟢 持续招聘 · 得力集团</div>
       </div>
-      <div class="job-desc">璁捐绠″煿鐢燂紙瑙嗚浼犺揪/骞抽潰/鎻掔敾/浜や簰/鏂板獟浣擄級銆傚畞娉㈡€婚儴銆?/div>
+      <div class="job-desc">设计管培生（视觉传达/平面/插画/交互/新媒体）。宁波总部。</div>
       <div class="job-footer">
-        <div class="job-meta">瀹佹尝 路 鍥藉绾у伐涓氳璁′腑蹇?/div>
+        <div class="job-meta">宁波 · 国家级工业设计中心</div>
         <div class="job-actions">
-          <a href="https://my.yingjiesheng.com/xjh-006-242-041.html" target="_blank" class="btn btn-outline btn-sm">鍏虫敞</a>
+          <a href="https://my.yingjiesheng.com/xjh-006-242-041.html" target="_blank" class="btn btn-outline btn-sm">关注</a>
         </div>
       </div>
     </div>
     <div class="job-card safe">
       <div class="job-header">
-        <div class="job-title">馃煝 鎸佺画鎷涜仒 路 闆峰＋鐓ф槑闈掕嫍璁″垝</div>
+        <div class="job-title">🟢 持续招聘 · 雷士照明青苗计划</div>
       </div>
-      <div class="job-desc">鎶€鏈潚鑻?鐮斿彂鏂瑰悜锛氬伐涓氳璁°€佽瑙変紶杈俱€佹暟瀛楀獟浣撹壓鏈€傛儬宸炴€婚儴銆?/div>
+      <div class="job-desc">技术青苗-研发方向：工业设计、视觉传达、数字媒体艺术。惠州总部。</div>
       <div class="job-footer">
-        <div class="job-meta">鎯犲窞 路 闈㈠悜鏈潵3-5骞翠汉鎵嶅偍澶?/div>
+        <div class="job-meta">惠州 · 面向未来3-5年人才储备</div>
         <div class="job-actions">
-          <a href="https://m.bysjy.com.cn/student/chance/onlinerecruitmentdetail.html?token=yxqqnn2600000011&type=0&recruitment_id=3503848" target="_blank" class="btn btn-outline btn-sm">鍏虫敞</a>
+          <a href="https://m.bysjy.com.cn/student/chance/onlinerecruitmentdetail.html?token=yxqqnn2600000011&type=0&recruitment_id=3503848" target="_blank" class="btn btn-outline btn-sm">关注</a>
         </div>
       </div>
     </div>
     <div class="job-card safe">
       <div class="job-header">
-        <div class="job-title">馃煝 鎸佺画鎷涜仒 路 椋炰簹杈?/div>
+        <div class="job-title">🟢 持续招聘 · 飞亚达</div>
       </div>
-      <div class="job-desc">浜у搧璁捐甯堬紙宸ヤ笟璁捐鏂瑰悜锛夛細宸ヤ笟璁捐銆佽壓鏈璁°€佽瑙変紶杈俱€佷骇鍝佽璁＄瓑銆傛繁鍦炽€?/div>
+      <div class="job-desc">产品设计师（工业设计方向）：工业设计、艺术设计、视觉传达、产品设计等。深圳。</div>
       <div class="job-footer">
-        <div class="job-meta">娣卞湷 路 鍥芥湁鎺ц偂涓婂競鍏徃</div>
+        <div class="job-meta">深圳 · 国有控股上市公司</div>
         <div class="job-actions">
-          <a href="https://cug.91wllm.cn/campus/view/id/995051" target="_blank" class="btn btn-outline btn-sm">鍏虫敞</a>
+          <a href="https://cug.91wllm.cn/campus/view/id/995051" target="_blank" class="btn btn-outline btn-sm">关注</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 姹傝亴宸ュ叿 -->
+<!-- 求职工具 -->
 <section class="container" id="tools">
-  <h2 class="section-title">馃洜锔?姹傝亴宸ュ叿绠?/h2>
+  <h2 class="section-title">🛠️ 求职工具箱</h2>
   <div class="tools-grid">
     <div class="tool-card">
-      <h3>馃搫 绠€鍘嗕紭鍖栨竻鍗?/h3>
-      <p>鉁?浣滃搧闆嗗繀椤诲寘鍚?-5涓畬鏁撮」鐩?br>鉁?姣忎釜椤圭洰闄勮璁℃€濊矾璇存槑<br>鉁?鏍囨敞浣跨敤杞欢锛歅S/AI/Figma/Sketch<br>鉁?瑙嗚浼犺揪涓撲笟绐佸嚭鎺掔増涓庤壊褰╄兘鍔?br>鉁?鎶曢€掓枃浠跺悕锛氬鍚峗瀛︽牎_宀椾綅_浣滃搧闆?/p>
-      <button class="btn btn-outline" onclick="alert('绠€鍘嗘ā鏉垮嵆灏嗕笂绾?)">涓嬭浇妯℃澘</button>
+      <h3>📄 简历优化清单</h3>
+      <p>✓ 作品集必须包含3-5个完整项目<br>✓ 每个项目附设计思路说明<br>✓ 标注使用软件：PS/AI/Figma/Sketch<br>✓ 视觉传达专业突出排版与色彩能力<br>✓ 投递文件名：姓名_学校_岗位_作品集</p>
+      <button class="btn btn-outline" onclick="alert('简历模板即将上线')">下载模板</button>
     </div>
     <div class="tool-card">
-      <h3>馃幆 鏍℃嫑鎶曢€掑钩鍙版眹鎬?/h3>
+      <h3>🎯 校招投递平台汇总</h3>
       <p>
-        <strong>銆愬叏鍥介€氱敤銆?/strong><br>
-        鈶?搴斿眾鐢熸眰鑱岀綉 yingjiesheng.com<br>
-        鈶?鐗涘缃?nowcoder.com<br>
-        鈶?鏅鸿仈鎷涜仒 zhaopin.com<br>
-        鈶?鐚庤仒 liepin.com<br>
-        鈶?鍥借仒 guopin.com锛堝浗浼侊級<br>
-        鈶?瀹炰範鍍?shixiseng.com<br>
-        鈶?澶у鐢熸眰鑱岀鍣紙灏忕▼搴?App锛?br><br>
-        <strong>銆愮寤?鍘﹂棬涓撳睘銆?/strong><br>
-        鈶?鍘﹂棬浜烘墠缃?xmrc.com.cn<br>
-        鈶?绂忓缓鐪佷簨涓氬崟浣嶅叕寮€鎷涜仒鏈嶅姟骞冲彴<br>
-        鈶?涓浗娴峰场浜烘墠缃?hxrc.com<br>
-        鈶?绂忓缓鍥借仒锛堝浗浼佸ぎ浼佺寤哄矖锛?      </p>
-      <a href="https://www.yingjiesheng.com" target="_blank" class="btn btn-primary">璁块棶骞冲彴</a>
+        <strong>【全国通用】</strong><br>
+        ① 应届生求职网 yingjiesheng.com<br>
+        ② 牛客网 nowcoder.com<br>
+        ③ 智联招聘 zhaopin.com<br>
+        ④ 猎聘 liepin.com<br>
+        ⑤ 国聘 guopin.com（国企）<br>
+        ⑥ 实习僧 shixiseng.com<br>
+        ⑦ 大学生求职神器（小程序/App）<br><br>
+        <strong>【福建/厦门专属】</strong><br>
+        ⑧ 厦门人才网 xmrc.com.cn<br>
+        ⑨ 福建省事业单位公开招聘服务平台<br>
+        ⑩ 中国海峡人才网 hxrc.com<br>
+        ⑪ 福建国聘（国企央企福建岗）
+      </p>
+      <a href="https://www.yingjiesheng.com" target="_blank" class="btn btn-primary">访问平台</a>
     </div>
     <div class="tool-card">
-      <h3>馃彨 婢崇澶у氨涓氳祫婧?/h3>
-      <p>鈶?鍒涗笟灏变笟鍙戝睍涓績 CECP<br>鈶?鏍℃嫑浼氾紙姣忓勾3鏈?9鏈堬級<br>鈶?妯惔绮ゆ境鍚堜綔鍖轰紒涓氬鎺?br>鈶?娓境闈掑勾鍒涗笟鍩哄湴<br>鈶?澶ф咕鍖洪潚骞村氨涓氳鍒?/p>
-      <a href="https://www.must.edu.mo/cecp/student" target="_blank" class="btn btn-primary">灏变笟瀹樼綉</a>
+      <h3>🏫 澳科大就业资源</h3>
+      <p>① 创业就业发展中心 CECP<br>② 校招会（每年3月/9月）<br>③ 横琴粤澳合作区企业对接<br>④ 港澳青年创业基地<br>⑤ 大湾区青年就业计划</p>
+      <a href="https://www.must.edu.mo/cecp/student" target="_blank" class="btn btn-primary">就业官网</a>
     </div>
     <div class="tool-card">
-      <h3>馃挕 闈㈣瘯鍑嗗寤鸿</h3>
-      <p>鉁?鍑嗗浣滃搧闆嗚瑙ｏ紙10鍒嗛挓鐗堬級<br>鉁?鐔熸倝鍝佺墝璁捐鍏ㄦ祦绋?br>鉁?浜嗚В鎶曢€掑叕鍙镐笟鍔′笌绔炲搧<br>鉁?缁冧範鑷垜浠嬬粛锛?/3/5鍒嗛挓鐗堬級<br>鉁?鍑嗗鍙嶉棶闂娓呭崟</p>
-      <button class="btn btn-outline" onclick="alert('闈㈣瘯棰樺簱鍗冲皢涓婄嚎')">鏌ョ湅棰樺簱</button>
+      <h3>💡 面试准备建议</h3>
+      <p>✓ 准备作品集讲解（10分钟版）<br>✓ 熟悉品牌设计全流程<br>✓ 了解投递公司业务与竞品<br>✓ 练习自我介绍（1/3/5分钟版）<br>✓ 准备反问问题清单</p>
+      <button class="btn btn-outline" onclick="alert('面试题库即将上线')">查看题库</button>
     </div>
   </div>
 </section>
 
-<!-- 椤佃剼 -->
+<!-- 页脚 -->
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h4>鍏充簬鏈珯</h4>
-        <p>涓撲负婢抽棬绉戞妧澶у瑙嗚浼犺揪璁捐2026灞婃湰绉戝簲灞婄敓鎵撻€犵殑鏍″洯鎷涜仒淇℃伅鑱氬悎绔欍€傛瘡鏃ヨ嚜鍔ㄦ洿鏂帮紝绮惧噯绛涢€夎璁＄被宀椾綅銆?/p>
+        <h4>关于本站</h4>
+        <p>专为澳门科技大学视觉传达设计2026届本科应届生打造的校园招聘信息聚合站。每日自动更新，精准筛选设计类岗位。</p>
       </div>
       <div>
-        <h4>鐩稿叧閾炬帴</h4>
-        <p><a href="https://www.must.edu.mo/cecp/student" target="_blank">婢崇澶у垱涓氬氨涓氬彂灞曚腑蹇?/a></p>
-        <p><a href="https://www.yingjiesheng.com" target="_blank">搴斿眾鐢熸眰鑱岀綉</a></p>
-        <p><a href="https://www.nowcoder.com" target="_blank">鐗涘缃戞牎鎷?/a></p>
+        <h4>相关链接</h4>
+        <p><a href="https://www.must.edu.mo/cecp/student" target="_blank">澳科大创业就业发展中心</a></p>
+        <p><a href="https://www.yingjiesheng.com" target="_blank">应届生求职网</a></p>
+        <p><a href="https://www.nowcoder.com" target="_blank">牛客网校招</a></p>
       </div>
       <div>
-        <h4>鎺ㄩ€佽缃?/h4>
-        <p>姣忔棩涓婂崍7:00鑷姩鏇存柊鏍℃嫑鎯呮姤</p>
-        <p>瑕嗙洊锛氬ぇ婀惧尯/涓婃捣/鍖椾含/鏉窞</p>
-        <p>绫诲瀷锛氬搧鐗?UI/骞抽潰/瑙嗚/鍖呰</p>
+        <h4>推送设置</h4>
+        <p>每日上午7:00自动更新校招情报</p>
+        <p>覆盖：大湾区/上海/北京/杭州</p>
+        <p>类型：品牌/UI/平面/视觉/包装</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>漏 2026 MUST瑙嗕紶2026鏍℃嫑鎯呮姤绔?| 鏁版嵁浠呬緵鍙傝€冿紝璇蜂互浼佷笟瀹樼綉涓哄噯 | 鏈€鍚庢洿鏂帮細2026-05-17</p>
+      <p>© 2026 MUST视传2026校招情报站 | 数据仅供参考，请以企业官网为准 | 最后更新：2026-05-17</p>
     </div>
   </div>
 </footer>
 
-<!-- 鎮诞鎸夐挳 -->
-<a href="#daily" class="float-btn">馃敐</a>
+<!-- 悬浮按钮 -->
+<a href="#daily" class="float-btn">🔝</a>
 
 <script>
-// 绛涢€夊姛鑳?function filterJobs(city, btn) {
+// 筛选功能
+function filterJobs(city) {
   const cards = document.querySelectorAll('.job-card');
   const btns = document.querySelectorAll('.filter-btn');
   btns.forEach(b => b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
+  event.target.classList.add('active');
   
   cards.forEach(card => {
     if (city === 'all') {
@@ -1408,19 +1416,19 @@ function filterByType(type) {
 }
 
 function filterByDeadline(days) {
-  // 绠€鍖栧鐞嗭細鏍规嵁data灞炴€ф垨鏂囨湰鍐呭绛涢€?  const cards = document.querySelectorAll('.job-card');
+  // 简化处理：根据data属性或文本内容筛选
+  const cards = document.querySelectorAll('.job-card');
   if (!days) { cards.forEach(c => c.style.display = ''); return; }
-  // 杩欓噷鍙互鎵╁睍鏇村鏉傜殑閫昏緫
-  alert('绛涢€夊姛鑳斤細' + days + '澶╁唴鎴鐨勫矖浣?);
+  // 这里可以扩展更复杂的逻辑
+  alert('筛选功能：' + days + '天内截止的岗位');
 }
 
-// 鑷姩鏇存柊鏃堕棿鏄剧ず
+// 自动更新时间显示
 const now = new Date();
 document.querySelectorAll('.update-time').forEach(el => {
-  el.innerHTML = '馃搮 鏁版嵁鏇存柊鏃堕棿锛? + now.toLocaleDateString() + ' ' + now.toLocaleTimeString() + ' | 鏉ユ簮锛氬簲灞婄敓姹傝亴缃戙€佺墰瀹㈢綉銆佹櫤鑱旀嫑鑱樸€佺寧鑱?;
+  el.innerHTML = '📅 数据更新时间：' + now.toLocaleDateString() + ' ' + now.toLocaleTimeString() + ' | 来源：应届生求职网、牛客网、智联招聘、猎聘';
 });
 </script>
 
 </body>
 </html>
-
