@@ -39,5 +39,25 @@ else
     echo "✅ 本地服务器运行中" >> "$LOG"
 fi
 
+# 6. 更新 index.html 中的日期
+cd "$WORKSPACE"
+YESTERDAY=$(date -d "yesterday" +%Y-%m-%d 2>/dev/null || date -v-1d +%Y-%m-%d 2>/dev/null || echo "$DATE")
+sed -i "s/今日精选校招（$YESTERDAY）/今日精选校招（$DATE）/g" index.html 2>/dev/null || true
+sed -i "s/最后更新：$YESTERDAY/最后更新：$DATE/g" index.html 2>/dev/null || true
+# 尝试更新多种日期格式
+sed -i "s/([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\})/($DATE)/g" index.html 2>/dev/null || true
+echo "✅ index.html 日期已更新为 $DATE" >> "$LOG"
+
+# 7. Git 提交并推送
+cd "$WORKSPACE"
+if git diff --quiet index.html 2>/dev/null; then
+    echo "✅ index.html 无变化，跳过提交" >> "$LOG"
+else
+    git add index.html
+    git commit -m "auto: daily update $DATE" >> "$LOG" 2>&1 || true
+    git push github master >> "$LOG" 2>&1 || true
+    echo "✅ GitHub Pages 已推送" >> "$LOG"
+fi
+
 echo "=== 更新完成 ===" >> "$LOG"
 echo ""

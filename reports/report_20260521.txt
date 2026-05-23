@@ -1,41 +1,38 @@
-报告已保存: /root/.openclaw/workspace/校招情报站/reports/report_20260523.txt
-
-==================================================
 🎓 澳科大视传2026届 · 每日校招情报
-📅 2026年05月23日 周六
+📅 2026年05月21日 周四
 
 ━━━━━━━━━━━━━━━━━━━━━━
 🔥 今日推荐（6个精选岗位）
 
-1. 【广东融泰药业】电商视觉设计实习生
+1. 【珠海格力】工业设计/平面设计
+   📍 珠海  |  💰 面议  |  ⏰ 秋招
+   💡 珠海，世界500强
+   👉 https://www.must.edu.mo/cecp/student
+
+2. 【博琭教育】设计实习生
+   📍 上海  |  💰 面议  |  ⏰ 滚动
+   💡 实习可转正，互联网教育
+   👉 https://m.yingjiesheng.com/h.php?word=视觉传达设计
+
+3. 【瀛海文化】设计师
+   📍 澳门  |  💰 面议  |  ⏰ 全职
+   💡 澳门本地，文化公司
+   👉 https://www.must.edu.mo/cecp/student
+
+4. 【广东融泰药业】电商视觉设计实习生
    📍 广州  |  💰 面议  |  ⏰ 滚动
    💡 电商设计方向
    👉 https://m.yingjiesheng.com/h.php?word=视觉传达设计
 
-2. 【杭州千艺文化】品牌设计/平面设计
-   📍 杭州  |  💰 面议  |  ⏰ 滚动
-   💡 文创产业发达
-   👉 https://m.yingjiesheng.com/h.php?word=视觉传达设计
+5. 【洲明科技】品牌营销/工业设计
+   📍 深圳/澳门  |  💰 面议  |  ⏰ 滚动
+   💡 LED显示屏全球第一，澳门有岗
+   👉 https://unilumin.zhiye.com/Campus
 
-3. 【飞亚达】产品设计师
-   📍 深圳  |  💰 面议  |  ⏰ 持续
-   💡 国有控股上市公司，工业设计方向
-   👉 https://cug.91wllm.cn/campus/view/id/995051
-
-4. 【武汉智能硬件】包装设计师
-   📍 武汉  |  💰 面议  |  ⏰ 2026-06-30
-   💡 需作品集，插画+三维造型能力
-   👉 https://www.nowcoder.com/jobs/detail/444336
-
-5. 【华与华】品牌设计/文案创意
-   📍 上海  |  💰 面议  |  ⏰ 已截止
-   💡 顶尖战略营销咨询公司，超级符号方法论
-   👉 https://www.nowcoder.com/enterprise/31834?pageSource=5014&channel=recruitmentSchedule
-
-6. 【上海禾赛智能】平面设计师
-   📍 上海  |  💰 面议  |  ⏰ 尽快投递
-   💡 激光雷达科技公司，品牌/展会设计
-   👉 https://m.yingjiesheng.com/h.php?word=视觉传达设计
+6. 【雷士照明】研发方向-工业设计
+   📍 惠州  |  💰 面议  |  ⏰ 青苗计划
+   💡 青苗计划，面向未来3-5年人才储备
+   👉 https://m.bysjy.com.cn/student/chance/onlinerecruitmentdetail.html?token=yxqqnn2600000011&type=0&recruitment_id=3503848
 
 ━━━━━━━━━━━━━━━━━━━━━━
 🌉 大湾区专场（9家企业）
@@ -70,5 +67,3 @@
 
 📊 数据仅供参考，请以企业官网为准
 💻 完整岗位列表：https://校招情报站（本地网站）
-
-==================================================
