@@ -1,0 +1,287 @@
+{
+  "updated": "2026-05-31",
+  "total": 28,
+  "active": 23,
+  "jobs": [
+    {
+      "company": "福州国有资产投资控股",
+      "position": "社会公开招聘（宣传策划类）",
+      "city": "福州",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "brand",
+      "highlight": "市属国企",
+      "url": ""
+    },
+    {
+      "company": "福建省二建建设集团",
+      "position": "2026校招（设计类/工程管理类）",
+      "city": "厦门/福州",
+      "salary": "面议",
+      "deadline": "2026-06-15",
+      "type": "visual",
+      "highlight": "省属国企",
+      "url": ""
+    },
+    {
+      "company": "瑞幸咖啡",
+      "position": "品牌包装设计师",
+      "city": "北京",
+      "salary": "面议",
+      "deadline": "尽快投递",
+      "type": "brand",
+      "highlight": "咖啡连锁头部品牌",
+      "url": ""
+    },
+    {
+      "company": "洲明科技",
+      "position": "品牌营销 / 工业设计",
+      "city": "深圳/惠州/中山/澳门",
+      "salary": "面议",
+      "deadline": "滚动",
+      "type": "brand",
+      "highlight": "LED显示屏全球第一，澳门有岗",
+      "url": "https://unilumin.zhiye.com/Campus"
+    },
+    {
+      "company": "格力电器",
+      "position": "工业设计 / 平面设计",
+      "city": "珠海",
+      "salary": "面议",
+      "deadline": "2026秋招",
+      "type": "industrial",
+      "highlight": "世界500强",
+      "url": ""
+    },
+    {
+      "company": "诗悦网络",
+      "position": "平面设计 / UI设计 / 原画",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "游戏大厂，多岗位",
+      "url": ""
+    },
+    {
+      "company": "韶音科技",
+      "position": "视觉设计 / UI设计 / 视频设计",
+      "city": "深圳",
+      "salary": "面议",
+      "deadline": "2026-05-04",
+      "type": "visual",
+      "highlight": "⚠️已截止(原：全球运动耳机品牌)",
+      "url": ""
+    },
+    {
+      "company": "飞亚达精密科技",
+      "position": "产品设计师（工业设计方向）",
+      "city": "深圳",
+      "salary": "面议",
+      "deadline": "持续",
+      "type": "industrial",
+      "highlight": "国有控股上市公司",
+      "url": ""
+    },
+    {
+      "company": "雷士照明",
+      "position": "研发方向（工业设计/视觉传达/数字媒体）",
+      "city": "惠州",
+      "salary": "面议",
+      "deadline": "青苗计划",
+      "type": "brand",
+      "highlight": "青苗计划人才储备",
+      "url": ""
+    },
+    {
+      "company": "深圳谱程未来科技",
+      "position": "平面设计师 / 渲染设计师",
+      "city": "深圳",
+      "salary": "面议",
+      "deadline": "2026-04-17",
+      "type": "graphic",
+      "highlight": "⚠️已截止",
+      "url": ""
+    },
+    {
+      "company": "广州凯斯博自行车",
+      "position": "平面/三维全能设计师",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "2026-04-22",
+      "type": "graphic",
+      "highlight": "⚠️已截止",
+      "url": ""
+    },
+    {
+      "company": "广东融泰药业",
+      "position": "电商视觉设计实习生",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "2026-04-24",
+      "type": "visual",
+      "highlight": "⚠️已截止",
+      "url": ""
+    },
+    {
+      "company": "瀛海文化",
+      "position": "设计师",
+      "city": "澳门",
+      "salary": "面议",
+      "deadline": "全职",
+      "type": "graphic",
+      "highlight": "澳门本地文化公司",
+      "url": ""
+    },
+    {
+      "company": "福州新榕城市建设发展有限公司",
+      "position": "策划拓展岗",
+      "city": "福州",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "brand",
+      "highlight": "市属国企",
+      "url": ""
+    },
+    {
+      "company": "厦门亿联网络",
+      "position": "视觉设计师 / 交互设计师",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "visual",
+      "highlight": "上市公司",
+      "url": ""
+    },
+    {
+      "company": "福州地铁集团",
+      "position": "设计管理岗（2026校招）",
+      "city": "福州",
+      "salary": "面议",
+      "deadline": "2026-06-15",
+      "type": "brand",
+      "highlight": "市属国企",
+      "url": ""
+    },
+    {
+      "company": "茶花现代家居用品",
+      "position": "产品设计师 / 包装设计师",
+      "city": "福州",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "industrial",
+      "highlight": "上市公司",
+      "url": ""
+    },
+    {
+      "company": "福建省港口集团（厦门轮船）",
+      "position": "营运中心业务员（艺术设计/视觉传达设计）",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "省属国企",
+      "url": ""
+    },
+    {
+      "company": "福建省汽车工业集团（金龙汽车）",
+      "position": "设计管培生 / 工业设计方向",
+      "city": "厦门/福州",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "industrial",
+      "highlight": "省属国企",
+      "url": ""
+    },
+    {
+      "company": "蕉内",
+      "position": "品牌视觉设计师",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "新锐服装品牌",
+      "url": ""
+    },
+    {
+      "company": "得力集团",
+      "position": "设计管培生",
+      "city": "宁波",
+      "salary": "面议",
+      "deadline": "持续招聘",
+      "type": "brand",
+      "highlight": "国家级工业设计中心",
+      "url": ""
+    },
+    {
+      "company": "千里目教育",
+      "position": "平面设计岗",
+      "city": "未注明",
+      "salary": "8K-13K/月",
+      "deadline": "滚动招聘",
+      "type": "graphic",
+      "highlight": "品牌视觉体系构建，高薪+年终奖",
+      "url": ""
+    },
+    {
+      "company": "华与华",
+      "position": "品牌设计/文案创意",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "已截止",
+      "type": "brand",
+      "highlight": "⚠️已截止(原：顶尖战略营销咨询公司)",
+      "url": ""
+    },
+    {
+      "company": "前程无忧发布企业",
+      "position": "电子商务与数字营销专员（视觉传达设计方向）",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "visual",
+      "highlight": "视觉传达设计/新媒体/电商方向",
+      "url": "https://www.yingjiesheng.com/job-007-855-404.html"
+    },
+    {
+      "company": "总部校招（零售/品牌企业）",
+      "position": "视觉设计储备项目经理(J10579)",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "2026-07-15",
+      "type": "brand",
+      "highlight": "六险一金·餐补·品牌内购",
+      "url": "https://www.yingjiesheng.com/job-007-871-910.html"
+    },
+    {
+      "company": "宁波菊思网络科技",
+      "position": "UI设计师（2026届校招）",
+      "city": "宁波",
+      "salary": "面议",
+      "deadline": "2026-07-31",
+      "type": "ui",
+      "highlight": "视觉传达设计/数字媒体专业",
+      "url": "https://www.yingjiesheng.com/job-007-942-341.html"
+    },
+    {
+      "company": "多益网络",
+      "position": "2026届校园招聘春季补录（设计类）",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "2026-06-15",
+      "type": "graphic",
+      "highlight": "游戏大厂·春招补录末班车",
+      "url": "https://hbpu.91wllm.cn/campus/view/id/997332"
+    },
+    {
+      "company": "上海文化创意人才推介会",
+      "position": "2026届高校毕业生文化创意人才招聘",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "2026-06-30",
+      "type": "brand",
+      "highlight": "多家企业联合·广告/传媒/艺术方向",
+      "url": "http://www.sh-zhaopinhui.com/TipsDetail5846.html"
+    }
+  ]
+}
