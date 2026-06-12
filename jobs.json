@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-31",
-  "total": 28,
-  "active": 23,
+  "updated": "2026-06-13",
+  "total": 33,
+  "active": 28,
   "jobs": [
     {
       "company": "福州国有资产投资控股",
@@ -282,6 +282,56 @@
       "type": "brand",
       "highlight": "多家企业联合·广告/传媒/艺术方向",
       "url": "http://www.sh-zhaopinhui.com/TipsDetail5846.html"
+    },
+    {
+      "company": "森马服饰",
+      "position": "图案设计师/视觉设计师（2026届校招）",
+      "city": "上海/温州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "知名服装品牌·设计岗多城市",
+      "url": "https://app.gaokaozhitongche.com/news/h/jOv3AdDw"
+    },
+    {
+      "company": "天华集团",
+      "position": "建筑设计/室内设计师（2026届校招）",
+      "city": "上海/北京/深圳",
+      "salary": "面议",
+      "deadline": "2026-07-31",
+      "type": "industrial",
+      "highlight": "知名建筑设计公司·多城市",
+      "url": "https://www.thape.com/news/890"
+    },
+    {
+      "company": "得物App",
+      "position": "设计部2026届秋季校招（体验设计/视觉设计）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "潮流电商头部·设计部专项",
+      "url": "https://www.behance.net/gallery/234776625/2026"
+    },
+    {
+      "company": "美图公司",
+      "position": "视觉/UI设计（2026届提前批）",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "厦门互联网大厂·设计驱动",
+      "url": "http://www.thubbs.cn/thread.php?id=172323"
+    },
+    {
+      "company": "沐瞳科技",
+      "position": "游戏UI设计/美术设计（2026届春招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "ui",
+      "highlight": "字节旗下游戏公司·MOBA",
+      "url": "https://wtu.91wllm.cn/news/view/aid/297945/tag/xxtz"
     }
   ]
 }
