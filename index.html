@@ -3,318 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>澳科大视传2026届 · 校园招聘情报站</title>
+<title>澳科大视传2026届校招情报站</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--primary:#1a1a2e;--accent:#e94560;--gold:#f5a623;--blue:#16213e;--light:#f8f9fa;--card:#fff;--text:#333;--muted:#888;--success:#27ae60;--warning:#f39c12;--danger:#e74c3c}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:var(--light);color:var(--text);line-height:1.6}
-.container{max-width:1200px;margin:0 auto;padding:0 20px}
-
-/* 顶部通知栏 */
-.notice-bar{background:linear-gradient(90deg,var(--accent),#ff6b6b);color:#fff;text-align:center;padding:10px;font-size:14px;position:fixed;top:0;left:0;right:0;z-index:1000}
-.notice-bar strong{background:#fff;color:var(--accent);padding:2px 8px;border-radius:4px;margin:0 4px}
-
-/* 导航 */
-.nav{background:var(--primary);padding:60px 0 20px;position:sticky;top:0;z-index:999;box-shadow:0 2px 20px rgba(0,0,0,0.1)}
-.nav .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{color:#fff;font-size:24px;font-weight:700}
-.logo span{color:var(--gold)}
-.logo small{display:block;font-size:12px;font-weight:400;color:#aaa;margin-top:2px}
-.nav-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap}
-.nav-links a{color:#fff;text-decoration:none;font-size:14px;opacity:0.85;transition:0.2s}
-.nav-links a:hover{opacity:1;color:var(--gold)}
-
-/* 英雄区 */
-.hero{background:linear-gradient(135deg,var(--primary) 0%,var(--blue) 100%);color:#fff;padding:60px 0;text-align:center}
-.hero h1{font-size:42px;margin-bottom:12px;font-weight:700}
-.hero p{font-size:18px;color:#aaa;margin-bottom:30px}
-.hero-stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:30px}
-.stat{text-align:center}
-.stat-num{font-size:36px;font-weight:700;color:var(--gold)}
-.stat-label{font-size:13px;color:#aaa;margin-top:4px}
-
-/* 筛选栏 */
-.filter-bar{background:#fff;padding:16px 0;border-bottom:1px solid #eee;position:sticky;top:60px;z-index:998}
-.filter-bar .container{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.filter-btn{background:#f0f0f0;border:none;padding:8px 18px;border-radius:20px;cursor:pointer;font-size:13px;transition:0.2s}
-.filter-btn:hover,.filter-btn.active{background:var(--accent);color:#fff}
-.filter-select{border:1px solid #ddd;padding:8px 14px;border-radius:8px;font-size:13px;background:#fff}
-
-/* 每日精选 */
-.daily-pick{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:40px 0;margin-bottom:30px}
-.daily-pick h2{font-size:24px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.daily-pick h2::before{content:"★";color:var(--gold)}
-.daily-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.daily-card{background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);border-radius:12px;padding:20px;border:1px solid rgba(255,255,255,0.2)}
-.daily-card .tag{display:inline-block;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:12px;font-size:11px;margin-bottom:10px}
-.daily-card h3{font-size:17px;margin-bottom:8px}
-.daily-card p{font-size:13px;opacity:0.9;line-height:1.7}
-.daily-card .meta{display:flex;gap:16px;margin-top:12px;font-size:12px;opacity:0.7}
-
-/* 校招卡片 */
-.section-title{font-size:22px;font-weight:700;margin:40px 0 20px;display:flex;align-items:center;gap:10px;color:var(--primary)}
-.section-title::before{content:"";display:inline-block;width:4px;height:24px;background:var(--accent);border-radius:2px}
-
-.job-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
-.job-card{background:var(--card);border-radius:12px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,0.06);transition:0.2s;position:relative;overflow:hidden}
-.job-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
-.job-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px}
-.job-card.hot::before{background:linear-gradient(90deg,var(--accent),#ff6b6b)}
-.job-card.new::before{background:linear-gradient(90deg,var(--success),#2ecc71)}
-.job-card.urgent::before{background:linear-gradient(90deg,var(--danger),#ff4757)}
-
-.job-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
-.job-title{font-size:16px;font-weight:700;color:var(--primary);line-height:1.4}
-.job-tags{display:flex;gap:6px;flex-wrap:wrap}
-.tag{display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:500}
-.tag-city{background:#e3f2fd;color:#1565c0}
-.tag-type{background:#f3e5f5;color:#7b1fa2}
-.tag-salary{background:#fff3e0;color:#e65100}
-.tag-deadline{background:#ffebee;color:#c62828}
-
-.job-company{font-size:14px;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.job-company .dot{width:6px;height:6px;background:var(--success);border-radius:50%;display:inline-block}
-
-.job-desc{font-size:13px;color:#666;line-height:1.7;margin-bottom:14px;max-height:60px;overflow:hidden}
-.job-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
-.job-meta{font-size:12px;color:var(--muted)}
-.job-actions{display:flex;gap:10px}
-.btn{display:inline-block;padding:8px 18px;border-radius:6px;font-size:13px;text-decoration:none;transition:0.2s;border:none;cursor:pointer}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:#d63050}
-.btn-outline{background:#fff;color:var(--accent);border:1px solid var(--accent)}
-.btn-outline:hover{background:var(--accent);color:#fff}
-.btn-sm{padding:6px 14px;font-size:12px}
-
-/* 截止提醒 */
-.deadline-alert{background:#fff3e0;border:1px solid #ffe0b2;border-radius:8px;padding:14px 18px;margin-bottom:20px;display:flex;align-items:center;gap:12px}
-.deadline-alert .icon{font-size:20px}
-.deadline-alert p{font-size:14px;color:#e65100}
-
-/* 城市板块 */
-.city-section{background:#fff;border-radius:12px;padding:30px;margin-bottom:24px;box-shadow:0 2px 12px rgba(0,0,0,0.04)}
-.city-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
-.city-name{font-size:20px;font-weight:700;color:var(--primary)}
-.city-name small{font-weight:400;color:var(--muted);font-size:13px;margin-left:8px}
-.city-count{background:var(--light);padding:4px 14px;border-radius:20px;font-size:13px;color:var(--muted)}
-
-/* 表格 */
-.table-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th{background:var(--primary);color:#fff;padding:12px;text-align:left;font-weight:600}
-td{padding:12px;border-bottom:1px solid #eee}
-tr:hover td{background:#fafafa}
-.company-cell{font-weight:600;color:var(--primary)}
-.position-cell{color:#555}
-.location-cell{color:var(--muted)}
-.deadline-cell{font-weight:600}
-.deadline-cell.urgent{color:var(--danger)}
-.deadline-cell.warning{color:var(--warning)}
-.deadline-cell.safe{color:var(--success)}
-.link-cell a{color:var(--accent);text-decoration:none;font-weight:500}
-.link-cell a:hover{text-decoration:underline}
-
-/* 工具区 */
-.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:20px}
-.tool-card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
-.tool-card h3{font-size:16px;margin-bottom:10px;color:var(--primary)}
-.tool-card p{font-size:13px;color:#666;line-height:1.7}
-.tool-card .btn{margin-top:14px}
-
-/* 页脚 */
-.footer{background:var(--primary);color:#fff;padding:40px 0 20px;margin-top:60px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-bottom:30px}
-.footer h4{font-size:16px;margin-bottom:14px;color:var(--gold)}
-.footer p,.footer a{font-size:13px;color:#aaa;line-height:2;text-decoration:none}
-.footer a:hover{color:#fff}
-.footer-bottom{border-top:1px solid #333;padding-top:20px;text-align:center;font-size:12px;color:#666}
-
-/* 悬浮按钮 */
-.float-btn{position:fixed;bottom:30px;right:30px;background:var(--accent);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 16px rgba(233,69,96,0.4);z-index:999;text-decoration:none;transition:0.2s}
-.float-btn:hover{transform:scale(1.1)}
-
-/* 响应式 */
-@media(max-width:768px){
-.hero h1{font-size:28px}
-.hero-stats{gap:20px}
-.nav-links{gap:16px;margin-top:10px}
-.job-grid{grid-template-columns:1fr}
-.filter-bar .container{gap:8px}
-.daily-grid{grid-template-columns:1fr}
-}
-
-/* 更新时间 */
-.update-time{text-align:center;font-size:12px;color:var(--muted);margin:20px 0}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; min-height: 100vh; }
+.header { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); padding: 20px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.header h1 { font-size: 2em; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.header .subtitle { color: #9ca3af; margin-top: 8px; }
+.header .update { color: #6b7280; font-size: 0.85em; margin-top: 5px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+.section-title { font-size: 1.5em; margin: 30px 0 20px; padding-bottom: 10px; border-bottom: 2px solid rgba(102,126,234,0.3); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+.card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(102,126,234,0.2); }
+.card .company { font-size: 1.2em; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.card .title { color: #667eea; font-size: 1.05em; margin-bottom: 10px; }
+.card .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; font-size: 0.9em; color: #9ca3af; }
+.card .meta span { background: rgba(102,126,234,0.15); padding: 3px 10px; border-radius: 20px; }
+.card .desc { color: #b0b0b0; font-size: 0.9em; line-height: 1.6; margin-bottom: 15px; }
+.card .apply-btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; padding: 8px 20px; border-radius: 25px; text-decoration: none; font-size: 0.9em; transition: opacity 0.3s; }
+.card .apply-btn:hover { opacity: 0.85; }
+.tag { display: inline-block; background: rgba(118,75,162,0.2); color: #a78bfa; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin: 2px; }
+.deadline-near { color: #fbbf24 !important; }
+.deadline-passed { color: #ef4444 !important; }
+.new-badge { display: inline-block; background: #22c55e; color: #fff; padding: 2px 8px; border-radius: 10px; font-size: 0.7em; margin-left: 4px; vertical-align: middle; }
+.footer { text-align: center; padding: 30px; color: #6b7280; font-size: 0.85em; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px; }
+.stats { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+.stat { background: rgba(255,255,255,0.05); padding: 15px 25px; border-radius: 10px; text-align: center; }
+.stat .num { font-size: 1.8em; font-weight: 700; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.stat .label { color: #9ca3af; font-size: 0.85em; margin-top: 4px; }
+@media (max-width: 768px) { .cards { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+<div class="header">
+<h1>🎨 澳科大视传2026届校招情报站</h1>
+<p class="subtitle">视觉传达设计专业 · 校园招聘信息每日速递</p>
+<p class="update">今日精选校招（2026-06-13） | 最后更新：2026-06-13</p>
+</div>
+<div class="container">
+<div class="stats">
+<div class="stat"><div class="num">16</div><div class="label">🔥 在招岗位</div></div>
+<div class="stat"><div class="num">10</div><div class="label">🏙️ 覆盖城市</div></div>
+<div class="stat"><div class="num">2026-06-13</div><div class="label">📅 情报更新</div></div>
+</div>
+<h2 class="section-title">🔥 今日精选</h2>
+<div class="cards">
 
-<!-- 顶部通知 -->
-<div class="notice-bar">
-  📢 每日9:00自动推送校招情报 | 今日更新 <strong>31</strong> 条设计类岗位 | 澳科大视传2026届专属
+<div class="card">
+<div class="company">路特创新（ROOT Global） <span class="new-badge">NEW</span></div>
+<div class="title">平面设计/CMF设计/视觉设计助理（2026春招）</div>
+<div class="meta">
+<span>📍 深圳</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">路特创新2026春季校园招聘，设计类：平面设计、CMF设计、视觉设计助理。面向2026届应届生，覆盖60+国家和地区，服务450万+全球用户。</p>
+<div style="margin-bottom:12px"><span class="tag">跨境电商</span><span class="tag">平面设计</span><span class="tag">CMF设计</span><span class="tag">深圳</span><span class="tag">大湾区</span></div>
+<a class="apply-btn" href="https://app.mokahr.com/m/campus-recruitment/rootglobal/44850" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">搜狐畅游 <span class="new-badge">NEW</span></div>
+<div class="title">游戏UI设计师/2D角色/3D角色/广告设计师（2026校招·美术类）</div>
+<div class="meta">
+<span>📍 北京（石景山）</span>
+<span>💰 14-16薪</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">搜狐畅游2026届校园招聘，搜狐全资子公司。美术类岗位：游戏UI设计师、2D/3D角色设计师、技术美术、广告设计师。全年14-16薪，七险一金，15天带薪年假。</p>
+<div style="margin-bottom:12px"><span class="tag">游戏</span><span class="tag">UI设计</span><span class="tag">原画</span><span class="tag">3D设计</span><span class="tag">北京</span></div>
+<a class="apply-btn" href="https://app.mokahr.com/m/campus_apply/cyouinc/42233" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">OPPO <span class="new-badge">NEW</span></div>
+<div class="title">UI视觉设计师/动效设计师（2026届全球校招）</div>
+<div class="meta">
+<span>📍 深圳 / 北京 / 上海 / 杭州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">OPPO 2026届全球校园招聘，全球领先的智能设备创新者。设计类：UI视觉设计师（软件产品方向）、动效设计师。面向2026届应届生，覆盖70+国家和地区。</p>
+<div style="margin-bottom:12px"><span class="tag">科技</span><span class="tag">UI设计</span><span class="tag">动效设计</span><span class="tag">深圳</span><span class="tag">北京</span><span class="tag">上海</span></div>
+<a class="apply-btn" href="https://careers.oppo.com/university/oppo/campus/" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">小红书 <span class="new-badge">NEW</span></div>
+<div class="title">设计类岗位（2026春季校园招聘）</div>
+<div class="meta">
+<span>📍 北京 / 上海 / 杭州 / 深圳</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">小红书2026届春季校园招聘正式启动，技术类、产品类、运营类、设计类等全覆盖。设计类岗位面向2026届应届毕业生，视觉传达设计、平面设计等相关专业均可投递。</p>
+<div style="margin-bottom:12px"><span class="tag">互联网</span><span class="tag">设计</span><span class="tag">北京</span><span class="tag">上海</span><span class="tag">杭州</span></div>
+<a class="apply-btn" href="https://job.xiaohongshu.com/campus" target="_blank">立即投递 →</a>
 </div>
 
-<!-- 导航 -->
-<nav class="nav">
-  <div class="container">
-    <div class="logo">
-      MUST视传2026<span>校招情报站</span>
-      <small>澳门科技大学 · 视觉传达设计 · 本科应届生</small>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#daily">每日精选</a></li>
-      <li><a href="#jobs">校招列表</a></li>
-      <li><a href="#gbay">大湾区专场</a></li>
-    <li><a href="#fujian-cygq">🏛️福建央国企</a></li>
-      <li><a href="#fujian-sydw">📜事业单位</a></li>
-      <li><a href="#fujian-ssgs">📈上市公司</a></li>
-      <li><a href="#fujian-xtj">⚡新特精企业</a></li>
-      <li><a href="#fuzhou">福州/泉州</a></li>
-      <li><a href="#macau">澳门本地</a></li>
-      <li><a href="#tools">求职工具</a></li>
-      <li><a href="#calendar">校招日历</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- 英雄区 -->
-<section class="hero">
-  <div class="container">
-    <h1>🎓 澳科大视传2026届校招情报站</h1>
-    <p>聚合粤港澳大湾区 · 全国设计类校园招聘信息 | 每日更新 · 精准投递</p>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">31</div>
-        <div class="stat-label">在招岗位</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">45</div>
-        <div class="stat-label">累计岗位</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">12</div>
-        <div class="stat-label">本周截止</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">8</div>
-        <div class="stat-label">澳门本地</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 筛选栏 -->
-<div class="filter-bar">
-  <div class="container">
-    <button class="filter-btn active" onclick="filterJobs('all')">全部</button>
-    <button class="filter-btn" onclick="filterJobs('gd')">广东/港澳</button>
-    <button class="filter-btn" onclick="filterJobs('sh')">上海</button>
-    <button class="filter-btn" onclick="filterJobs('bj')">北京</button>
-    <button class="filter-btn" onclick="filterJobs('hz')">杭州</button>
-    <button class="filter-btn" onclick="filterJobs('sz')">深圳</button>
-    <button class="filter-btn" onclick="filterJobs('gz')">广州</button>
-    <select class="filter-select" onchange="filterByType(this.value)">
-      <option value="">岗位类型</option>
-      <option value="brand">品牌设计</option>
-      <option value="ui">UI/UX设计</option>
-      <option value="graphic">平面设计</option>
-      <option value="visual">视觉设计</option>
-      <option value="package">包装设计</option>
-      <option value="motion">动效/视频</option>
-    </select>
-    <select class="filter-select" onchange="filterByDeadline(this.value)">
-      <option value="">截止时间</option>
-      <option value="3">3天内截止</option>
-      <option value="7">7天内截止</option>
-      <option value="30">本月截止</option>
-      <option value="ongoing">滚动招聘</option>
-    </select>
-  </div>
+<div class="card">
+<div class="company">海康威视（Hikvision） <span class="new-badge">NEW</span></div>
+<div class="title">体验设计类（视觉设计/交互设计/工业设计）</div>
+<div class="meta">
+<span>📍 杭州 / 上海 / 武汉 / 西安</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
 </div>
-
-<!-- 每日精选 -->
-<section class="daily-pick" id="daily">
-  <div class="container">
-    <h2>🔥 今日精选校招（2026-06-13）</h2>
-    <div class="daily-grid">
-      <div class="daily-card">
-        <span class="tag">🆕 服装品牌·设计岗</span>
-        <h3>森马服饰 · 图案设计师/视觉设计师</h3>
-        <p>知名服装品牌2026届校招，图案设计师、男/女装设计师、童装设计师。上海/温州工作，设计类专业均可。</p>
-        <div class="meta">
-          <span>📍 上海/温州</span>
-          <span>💰 面议</span>
-          <span>⏰ 招满即止</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="https://app.gaokaozhitongche.com/news/h/jOv3AdDw" target="_blank" class="btn btn-primary btn-sm">查看详情 →</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">🆕 建筑设计·多城市</span>
-        <h3>天华集团 · 建筑设计/室内设计师</h3>
-        <p>知名建筑设计公司2026届校招，城市规划、建筑设计、室内设计、景观设计多方向。上海/北京/深圳工作。</p>
-        <div class="meta">
-          <span>📍 上海/北京/深圳</span>
-          <span>💰 面议</span>
-          <span>⏰ 2026-07-31</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="https://www.thape.com/news/890" target="_blank" class="btn btn-primary btn-sm">立即投递 →</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">🆕 潮流电商·设计部</span>
-        <h3>得物App · 设计部2026届秋季校招</h3>
-        <p>潮流电商头部平台，设计部专项校招启动。体验设计、视觉设计方向，上海工作，作品集导向。</p>
-        <div class="meta">
-          <span>📍 上海</span>
-          <span>💰 面议</span>
-          <span>⏰ 招满即止</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="https://www.behance.net/gallery/234776625/2026" target="_blank" class="btn btn-primary btn-sm">Behance查看 →</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">🆕 厦门·互联网</span>
-        <h3>美图公司 · 视觉/UI设计（提前批）</h3>
-        <p>厦门互联网大厂，2026届校园招聘提前批。视觉设计师、UI设计师方向，设计驱动型公司，产品有温度。</p>
-        <div class="meta">
-          <span>📍 厦门</span>
-          <span>💰 面议</span>
-          <span>⏰ 招满即止</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="http://www.thubbs.cn/thread.php?id=172323" target="_blank" class="btn btn-primary btn-sm">查看详情 →</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">🎮 游戏·字节系</span>
-        <h3>沐瞳科技 · 游戏UI/美术设计（春招）</h3>
-        <p>字节跳动旗下游戏公司，2026届春招进行中。游戏UI设计、美术设计方向，MOBA游戏研发，上海工作。</p>
-        <div class="meta">
-          <span>📍 上海</span>
-          <span>💰 面议</span>
-          <span>⏰ 招满即止</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="https://wtu.91wllm.cn/news/view/aid/297945/tag/xxtz" target="_blank" class="btn btn-primary btn-sm">立即投递 →</a>
-        </div>
-      </div>
-      <div class="daily-card">
-        <span class="tag">⏰ 春招补录·倒计时</span>
-        <h3>多益网络 · 2026届春季补录</h3>
-        <p>游戏行业头部企业，设计类岗位春招补录末班车。6月15日截止，三维模型/UI/视觉设计方向，广州工作。</p>
-        <div class="meta">
-          <span>📍 广州</span>
-          <span>💰 面议</span>
-          <span>⏰ 2026-06-15截止</span>
-        </div>
-        <div style="margin-top:12px;">
-          <a href="https://hbpu.91wllm.cn/campus/view/id/997332" target="_blank" class="btn btn-primary btn-sm">立即投递 →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<p class="desc">海康威视2026届春季校园招聘火热进行中，体验设计类岗位涵盖视觉设计、交互设计、工业设计方向。全球领先的智能物联网解决方案提供商。面向2026届应届毕业生。</p>
+<div style="margin-bottom:12px"><span class="tag">科技</span><span class="tag">视觉设计</span><span class="tag">交互设计</span><span class="tag">杭州</span><span class="tag">上海</span></div>
+<a class="apply-btn" href="https://campushr.hikvision.com" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">字节跳动 <span class="new-badge">NEW</span></div>
+<div class="title">设计类（UI/UX/视觉设计）</div>
+<div class="meta">
+<span>📍 北京 / 上海 / 深圳 / 杭州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">字节跳动2026届校园招聘，5000+Offer，8大类职位全年开放。设计类涵盖UI、UX、视觉设计方向。面向2025.9-2026.8期间毕业的应届生。</p>
+<div style="margin-bottom:12px"><span class="tag">互联网</span><span class="tag">UI设计</span><span class="tag">UX设计</span><span class="tag">北京</span><span class="tag">上海</span><span class="tag">深圳</span></div>
+<a class="apply-btn" href="https://job.toutiao.com" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">广汽集团 <span class="new-badge">NEW</span></div>
+<div class="title">设计类（产品研发/商品企划/智能网联方向）</div>
+<div class="meta">
+<span>📍 广州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-15</span>
+</div>
+<p class="desc">广汽集团2026届春季校园招聘，涵盖产品研发类、商品企划类、设计类等。A+H股上市大型国有控股企业集团。面向2026届全球优秀应届毕业生。</p>
+<div style="margin-bottom:12px"><span class="tag">汽车</span><span class="tag">设计</span><span class="tag">广州</span><span class="tag">大湾区</span><span class="tag">国企</span></div>
+<a class="apply-btn" href="https://gacgroup2026.zhaopin.com" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">哔哩哔哩（B站） <span class="new-badge">NEW</span></div>
+<div class="title">视觉设计师（2026届校招）</div>
+<div class="meta">
+<span>📍 上海 / 北京 / 广州 / 杭州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">哔哩哔哩2026届校园招聘已启动，面向2026.1-2026.12期间毕业的本科/硕士应届生。视觉设计师岗位，负责B站平台及产品的视觉设计工作。</p>
+<div style="margin-bottom:12px"><span class="tag">互联网</span><span class="tag">视觉设计</span><span class="tag">上海</span><span class="tag">北京</span><span class="tag">杭州</span></div>
+<a class="apply-btn" href="https://jobs.bilibili.com/campus" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">荣耀（HONOR） <span class="new-badge">NEW</span></div>
+<div class="title">产品与设计岗（2026届全球校招）</div>
+<div class="meta">
+<span>📍 深圳 / 北京 / 南京 / 上海 / 西安</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">荣耀2026届全球校园招聘正式启动，11大职类60+岗位方向。产品与设计类岗位，面向2026届应届毕业生，视觉传达设计等相关专业。深圳、北京、南京、上海、西安多地可选。</p>
+<div style="margin-bottom:12px"><span class="tag">科技</span><span class="tag">产品设计</span><span class="tag">深圳</span><span class="tag">北京</span><span class="tag">上海</span></div>
+<a class="apply-btn" href="https://career.honor.com/SU60eea919bef57c1023f6fe78/pb/school.html" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">百奥家庭互动（Aobi） <span class="new-badge">NEW</span></div>
+<div class="title">视觉设计师/UI设计师（2026届校招·美术类）</div>
+<div class="meta">
+<span>📍 广州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">国内领先的游戏研发与发行企业，深耕游戏行业十余年，代表作品：奥拉星、奥奇传说、奥比岛等。2026届校招美术类岗位：视觉设计师、UI设计师等。面向2026届应届毕业生。</p>
+<div style="margin-bottom:12px"><span class="tag">游戏</span><span class="tag">视觉设计</span><span class="tag">UI设计</span><span class="tag">广州</span><span class="tag">大湾区</span></div>
+<a class="apply-btn" href="https://app.mokahr.com/campus_apply/aobi/25016#/jobs" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">欧派家居集团</div>
+<div class="title">2026校招-广州总部-设计岗</div>
+<div class="meta">
+<span>📍 广州</span>
+<span>💰 面议</span>
+<span>⏰ 2026-06-30</span>
+</div>
+<p class="desc">欧派家居集团2026届校园招聘，广州总部设计岗位。欧派为亚洲规模领先的家居制造企业，年产橱柜、衣柜等超百万套。面向2026届应届毕业生，视觉传达设计、平面设计等相关专业。</p>
+<div style="margin-bottom:12px"><span class="tag">家居</span><span class="tag">设计</span><span class="tag">广州</span><span class="tag">大湾区</span></div>
+<a class="apply-btn" href="https://www.yingjiesheng.com/job-007-916-753.html" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">多益网络</div>
+<div class="title">游戏UI设计师（2026届校招）</div>
+<div class="meta">
+<span>📍 广州 / 武汉 / 苏州 / 杭州</span>
+<span>💰 7-14K·14薪</span>
+<span>⏰ 2026-06-30</span>
+</div>
+<p class="desc">负责游戏界面及相关UI与图标设计制作，完成游戏字体等相关内容制作。面向2026届应届毕业生，视觉传达设计、平面设计等相关专业。</p>
+<div style="margin-bottom:12px"><span class="tag">游戏</span><span class="tag">UI设计</span><span class="tag">广州</span><span class="tag">武汉</span><span class="tag">杭州</span></div>
+<a class="apply-btn" href="https://xz.duoyi.com/" target="_blank">立即投递 →</a>
+</div>
+<div class="card">
+<div class="company">边锋网络</div>
+<div class="title">UI设计师（2026届校招）</div>
+<div class="meta">
+<span>📍 杭州（西湖区）</span>
+<span>💰 12-15K</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">负责参与公司产品开发与规划，负责视觉效果美术创意、风格定位，提升用户体验。面向2026届应届毕业生。</p>
+<div style="margin-bottom:12px"><span class="tag">互联网</span><span class="tag">UI设计</span><span class="tag">杭州</span></div>
+<a class="apply-btn" href="https://www.nowcoder.com/community/10015" target="_blank">立即投递 →</a>
+</div>
+</div>
+<h2 class="section-title">📋 全部岗位列表</h2>
+<div class="cards" id="all-jobs"></div>
+<div style="margin-top:40px; padding:20px; background:rgba(255,255,255,0.03); border-radius:12px;">
+<h3 style="color:#667eea; margin-bottom:12px;">💡 求职小贴士</h3>
+<ul style="color:#9ca3af; line-height:2; padding-left:20px;">
+<li>📌 重点关注<strong>粤港澳大湾区</strong>（深圳、广州）和<strong>长三角</strong>（杭州、上海）的设计岗位</li>
+<li>📌 福建地区（厦门、福州）的本地企业也是不错的选择</li>
+<li>📌 建议同时准备<strong>作品集</strong>（PDF/在线链接），大多数设计岗都要求提供</li>
+<li>📌 关注<strong>截止日期</strong>，尽早投递增加面试机会</li>
+<li>📌 游戏行业（百奥、多益网络）和电商行业（图拉斯、唯品会、中达）是视传专业的重要去向</li>
+<li>📌 大厂机会：哔哩哔哩、荣耀等2026校招正在进行中</li>
+<li>📌 家居行业（欧派家居）也是视觉传达设计专业的新兴去向</li>
+</ul>
+</div>
+</div>
+<div class="footer">
+<p>🎓 澳科大视觉传达设计2026届 · 校招情报站</p>
+<p>数据来源：国聘、牛客网、应届生求职网、各企业校招官网 | 仅供参考，具体以企业官方信息为准</p>
+<p>最后更新：2026-06-13</p>
+</div>
+<script>
+fetch('jobs.json')
+.then(function(r) { return r.json(); })
+.then(function(data) {
+var container = document.getElementById('all-jobs');
+data.jobs.forEach(function(job) {
+var card = document.createElement('div');
+card.className = 'card';
+var now = new Date();
+var dl = new Date(job.deadline);
+var dc = dl < now ? 'deadline-passed' : ((dl - now) < 7*86400000 ? 'deadline-near' : '');
+var tagsHTML = (job.tags || []).map(function(t) { return '<span class="tag">' + t + '</span>'; }).join('');
+var expiredNote = job.status === 'expired' ? ' (已截止)' : '';
+var isNew = job.found_date === '2026-06-13' ? ' <span class="new-badge">NEW</span>' : '';
+card.innerHTML = '<div class="company">' + job.company + isNew + '</div>' +
+'<div class="title">' + job.title + '</div>' +
+'<div class="meta"><span>📍 ' + job.location + '</span><span>💰 ' + job.salary + '</span><span class="' + dc + '">⏰ ' + job.deadline + expiredNote + '</span></div>' +
+'<p class="desc">' + job.description + '</p>' +
+'<div style="margin-bottom:12px">' + tagsHTML + '</div>' +
+'<a class="apply-btn" href="' + job.apply_url + '" target="_blank">立即投递 →</a>';
+container.appendChild(card);
+});
+});
+</script>
+</body>
+</html>
