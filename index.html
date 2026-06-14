@@ -39,16 +39,29 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft Ya
 <div class="header">
 <h1>🎨 澳科大视传2026届校招情报站</h1>
 <p class="subtitle">视觉传达设计专业 · 校园招聘信息每日速递</p>
-<p class="update">今日精选校招（2026-06-13） | 最后更新：2026-06-13</p>
+<p class="update">今日精选校招（2026-06-15） | 最后更新：2026-06-15</p>
 </div>
 <div class="container">
 <div class="stats">
-<div class="stat"><div class="num">19</div><div class="label">🔥 在招岗位</div></div>
+<div class="stat"><div class="num">20</div><div class="label">🔥 在招岗位</div></div>
 <div class="stat"><div class="num">11</div><div class="label">🏙️ 覆盖城市</div></div>
-<div class="stat"><div class="num">2026-06-13</div><div class="label">📅 情报更新</div></div>
+<div class="stat"><div class="num">2026-06-15</div><div class="label">📅 情报更新</div></div>
 </div>
 <h2 class="section-title">🔥 今日精选</h2>
 <div class="cards">
+
+<div class="card">
+<div class="company">米哈游（miHoYo） <span class="new-badge">NEW</span></div>
+<div class="title">美术表现类（2026春季校园招聘）</div>
+<div class="meta">
+<span>📍 上海</span>
+<span>💰 面议</span>
+<span>⏰ 2026-07-31</span>
+</div>
+<p class="desc">米哈游2026届春季校园招聘全面开启，美术表现类岗位面向2026届应届毕业生。全球领先的互动娱乐公司，代表作品：原神、崩坏：星穹铁道、绝区零。视觉传达设计、平面设计、数字媒体艺术等相关专业均可投递，需附作品集。</p>
+<div style="margin-bottom:12px"><span class="tag">游戏</span><span class="tag">美术设计</span><span class="tag">视觉设计</span><span class="tag">上海</span></div>
+<a class="apply-btn" href="https://campus.mihoyo.com" target="_blank">立即投递 →</a>
+</div>
 <div class="card">
 <div class="company">完美世界 <span class="new-badge">NEW</span></div>
 <div class="title">美术设计类（2026春季校园招聘）</div>
@@ -262,7 +275,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft Ya
 <div class="footer">
 <p>🎓 澳科大视觉传达设计2026届 · 校招情报站</p>
 <p>数据来源：国聘、牛客网、应届生求职网、各企业校招官网 | 仅供参考，具体以企业官方信息为准</p>
-<p>最后更新：2026-06-13</p>
+<p>最后更新：2026-06-15</p>
 </div>
 <script>
 fetch('jobs.json')
@@ -277,7 +290,7 @@ var dl = new Date(job.deadline);
 var dc = dl < now ? 'deadline-passed' : ((dl - now) < 7*86400000 ? 'deadline-near' : '');
 var tagsHTML = (job.tags || []).map(function(t) { return '<span class="tag">' + t + '</span>'; }).join('');
 var expiredNote = job.status === 'expired' ? ' (已截止)' : '';
-var isNew = job.found_date === '2026-06-13' ? ' <span class="new-badge">NEW</span>' : '';
+var isNew = job.found_date === '2026-06-15' ? ' <span class="new-badge">NEW</span>' : '';
 card.innerHTML = '<div class="company">' + job.company + isNew + '</div>' +
 '<div class="title">' + job.title + '</div>' +
 '<div class="meta"><span>📍 ' + job.location + '</span><span>💰 ' + job.salary + '</span><span class="' + dc + '">⏰ ' + job.deadline + expiredNote + '</span></div>' +
