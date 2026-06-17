@@ -1,6 +1,64 @@
 {
-  "updated": "2026-06-16",
+  "updated": "2026-06-18",
   "jobs": [
+    {
+      "id": "4399-art-2026",
+      "title": "游戏UI/视觉/原画设计师（2026届校招）",
+      "company": "4399游戏",
+      "location": "广州",
+      "salary": "面议",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "description": "4399游戏2026届校园招聘。美术类：UI设计师、视觉设计师、原画师、3D设计师。广州老牌游戏公司。",
+      "apply_url": "https://web.4399.com/campus/",
+      "source": "各企业校招官网",
+      "tags": [
+        "广州",
+        "大湾区",
+        "平面设计",
+        "视觉设计"
+      ],
+      "found_date": "2026-06-17"
+    },
+    {
+      "id": "alibaba-intl-design-2026",
+      "title": "体验设计/视觉设计（2026届校园招聘）",
+      "company": "阿里巴巴国际站",
+      "location": "杭州",
+      "salary": "面议",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "description": "阿里国际2026届校招，1000+Offer。速卖通、阿里国际站、AI Business。设计类岗位。",
+      "apply_url": "https://careers-tongyi.alibaba.com/campus/home",
+      "source": "各企业校招官网",
+      "tags": [
+        "杭州",
+        "阿里巴巴",
+        "视觉设计"
+      ],
+      "found_date": "2026-06-17"
+    },
+    {
+      "id": "baidu-design-2026",
+      "title": "视觉设计/交互设计（2026届校园招聘）",
+      "company": "百度",
+      "location": "北京 / 上海 / 深圳 / 广州",
+      "salary": "面议",
+      "deadline": "2026-07-31",
+      "status": "active",
+      "description": "百度2026届校园招聘，4000+Offer。设计类：视觉设计、交互设计、用户研究。覆盖北京/上海/深圳/广州。",
+      "apply_url": "https://talent.baidu.com/jobs/campus",
+      "source": "各企业校招官网",
+      "tags": [
+        "北京",
+        "上海",
+        "广州",
+        "深圳",
+        "视觉设计",
+        "大湾区"
+      ],
+      "found_date": "2026-06-17"
+    },
     {
       "id": "gh-eef14dc2",
       "title": "社会公开招聘（宣传策划类）",
