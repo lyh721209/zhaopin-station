@@ -1,151 +1,160 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xinyi Campus Recruitment Station | 2026 Visual Communication Design</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
-    .container { max-width: 900px; margin: 0 auto; }
-    header { text-align: center; color: white; padding: 30px 0; }
-    header h1 { font-size: 2.5em; margin-bottom: 8px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
-    header p { font-size: 1.1em; opacity: 0.9; }
-    .update-info { text-align: center; color: #ffe; font-size: 0.9em; margin-bottom: 20px; }
-    .card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); transition: transform 0.2s; }
-    .card:hover { transform: translateY(-3px); }
-    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
-    .card-title { font-size: 1.3em; font-weight: 700; color: #333; }
-    .card-company { color: #667eea; font-weight: 600; }
-    .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; font-weight: 600; }
-    .badge-active { background: #e8f5e9; color: #2e7d32; }
-    .badge-expired { background: #ffebee; color: #c62828; }
-    .card-desc { color: #555; line-height: 1.6; margin: 8px 0; }
-    .card-meta { display: flex; gap: 20px; font-size: 0.85em; color: #888; flex-wrap: wrap; }
-    .card-meta span { display: flex; align-items: center; gap: 4px; }
-    .card-link { display: inline-block; margin-top: 12px; padding: 8px 20px; background: #667eea; color: white; border-radius: 20px; text-decoration: none; font-weight: 600; font-size: 0.9em; }
-    .card-link:hover { background: #5a6fd6; }
-    .stats { display: flex; gap: 16px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
-    .stat-box { background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border-radius: 12px; padding: 16px 24px; text-align: center; color: white; }
-    .stat-num { font-size: 2em; font-weight: 800; }
-    .stat-label { font-size: 0.85em; opacity: 0.9; }
-    footer { text-align: center; color: white; padding: 30px 0; opacity: 0.8; font-size: 0.9em; }
-    .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
-    .tag { background: #f0f0f0; color: #666; padding: 2px 8px; border-radius: 8px; font-size: 0.8em; }
-    .notice { background: rgba(255,255,255,0.12); border-radius: 12px; padding: 14px 20px; margin-bottom: 18px; color: #ffd54f; font-size: 0.9em; text-align: center; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芯夷校招情报站 | 澳科大视传2026届</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { font-size: 2em; margin-bottom: 8px; }
+        .header p { opacity: 0.9; font-size: 1.1em; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .update-info { text-align: center; color: #888; margin: 10px 0 20px; font-size: 0.9em; }
+        .job-card { background: white; border-radius: 12px; padding: 24px; margin: 16px 0; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+        .job-card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+        .job-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+        .job-title { font-size: 1.2em; font-weight: 700; color: #2d3748; }
+        .job-company { font-weight: 600; color: #667eea; }
+        .job-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 0.9em; color: #718096; }
+        .job-meta span { background: #edf2f7; padding: 3px 10px; border-radius: 20px; }
+        .job-desc { color: #4a5568; margin: 12px 0; font-size: 0.95em; }
+        .job-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+        .job-tag { background: #e9d8fd; color: #6b46c1; padding: 4px 12px; border-radius: 15px; font-size: 0.85em; }
+        .job-link { display: inline-block; margin-top: 12px; padding: 8px 20px; background: #667eea; color: white; text-decoration: none; border-radius: 8px; font-size: 0.9em; transition: background 0.2s; }
+        .job-link:hover { background: #5a67d8; }
+        .footer { text-align: center; padding: 30px; color: #a0aec0; font-size: 0.85em; }
+        .stats { display: flex; justify-content: center; gap: 30px; margin: 20px 0; flex-wrap: wrap; }
+        .stat { text-align: center; }
+        .stat-num { font-size: 2em; font-weight: 700; color: #667eea; }
+        .stat-label { font-size: 0.85em; color: #888; }
+        .region-badge { background: #fed7d7; color: #c53030; padding: 2px 10px; border-radius: 20px; font-size: 0.8em; }
+        .deadline-warn { color: #e53e3e; font-weight: 600; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Xinyi Campus Recruitment Station</h1>
-      <p>2026 Visual Communication Design | Campus Recruitment Tracker</p>
-    </header>
+    <div class="header">
+        <h1>芯夷校招情报站</h1>
+        <p>澳科大视觉传达设计 · 2026届应届生专属</p>
+        <p style="font-size:0.9em;margin-top:8px;">覆盖粤港澳大湾区 · 福州 · 厦门 · 上海 · 北京 · 杭州</p>
+    </div>
+    <div class="container">
+        <div class="update-info">
+            <h2>今日精选校招（2026-06-18）</h2>
+            <p>最后更新：2026-06-18 | 数据来源：应届生求职网 · 牛客网 · 各企业官网</p>
+        </div>
 
-    <div class="update-info">
-      Last Updated: 2026-06-18
-    </div>
+        <div class="stats">
+            <div class="stat"><div class="stat-num">5</div><div class="stat-label">在招岗位</div></div>
+            <div class="stat"><div class="stat-num">5</div><div class="stat-label">新增岗位</div></div>
+            <div class="stat"><div class="stat-num">0</div><div class="stat-label">今日截止</div></div>
+        </div>
 
-    <div class="stats">
-      <div class="stat-box">
-        <div class="stat-num">48</div>
-        <div class="stat-label">Active Jobs</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">0</div>
-        <div class="stat-label">New Today</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Expired</div>
-      </div>
-    </div>
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">平面设计师（2026届春招-广州）</div>
+                    <div class="job-company">省广集团</div>
+                </div>
+                <span class="region-badge">粤港澳大湾区</span>
+            </div>
+            <div class="job-meta">
+                <span>广州</span><span>校招</span><span>平面设计</span><span>截止: 2026-07-31</span>
+            </div>
+            <div class="job-desc">
+                省广集团2026届春招平面设计师岗位。省广以卓越的创意与策划能力享誉业界，共获国际国内超过一千个奖项，包括伦敦广告奖、美国莫比金奖等。负责品牌视觉创意设计、广告物料制作。
+            </div>
+            <div class="job-tags">
+                <span class="job-tag">平面设计</span><span class="job-tag">品牌设计</span><span class="job-tag">广告</span><span class="job-tag">广州</span>
+            </div>
+            <a class="job-link" href="https://www.yingjiesheng.com/job-007-912-406.html" target="_blank">查看详情 →</a>
+        </div>
 
-    <div class="notice">
-      今日无新增岗位（搜索服务异常，请关注官方渠道）
-    </div>
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">视觉传达设计专员（电商数字营销方向）</div>
+                    <div class="job-company">某大型快消企业</div>
+                </div>
+                <span class="region-badge">粤港澳大湾区</span>
+            </div>
+            <div class="job-meta">
+                <span>广州</span><span>校招</span><span>视觉传达</span><span>截止: 2026-07-31</span>
+            </div>
+            <div class="job-desc">
+                2026届校招，细分方向含视觉传达设计专员。要求视觉传达设计、数字媒体艺术等相关专业。负责电商平台视觉设计、新媒体内容策划与视觉呈现。
+            </div>
+            <div class="job-tags">
+                <span class="job-tag">视觉传达</span><span class="job-tag">电商设计</span><span class="job-tag">新媒体</span><span class="job-tag">广州</span>
+            </div>
+            <a class="job-link" href="https://www.yingjiesheng.com/job-007-855-404.html" target="_blank">查看详情 →</a>
+        </div>
 
-    <h2 style="color:white; margin: 20px 0 15px;">Today's Featured (2026-06-18)</h2>
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">UI设计师（2026届）</div>
+                    <div class="job-company">宁波菊思网络科技有限公司</div>
+                </div>
+                <span class="region-badge">长三角</span>
+            </div>
+            <div class="job-meta">
+                <span>宁波</span><span>校招</span><span>UI设计</span><span>截止: 2026-08-31</span>
+            </div>
+            <div class="job-desc">
+                招聘专业：视觉传达设计、数字媒体艺术、工艺美术、工业设计、动画。2026年应届毕业生。理解基本UX/UI设计流程，有交互或视觉设计基础。负责产品界面设计、交互原型制作。
+            </div>
+            <div class="job-tags">
+                <span class="job-tag">UI设计</span><span class="job-tag">UX设计</span><span class="job-tag">交互设计</span><span class="job-tag">宁波</span>
+            </div>
+            <a class="job-link" href="https://www.yingjiesheng.com/job-007-942-341.html" target="_blank">查看详情 →</a>
+        </div>
 
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">游戏UI/视觉/原画设计师（2026届校招）</span>
-        <span class="card-company">4399游戏</span>
-        <span class="badge badge-active">HOT</span>
-      </div>
-      <div class="card-desc">4399游戏2026届校园招聘。美术类：UI设计师、视觉设计师、原画师、3D设计师。广州老牌游戏公司。</div>
-      <div class="tags"><span class="tag">广州</span><span class="tag">大湾区</span><span class="tag">平面设计</span><span class="tag">视觉设计</span></div>
-      <div class="card-meta">
-        <span>广州</span>
-        <span>2026-07-31</span>
-        <span>2026</span>
-      </div>
-      <a class="card-link" href="https://web.4399.com/campus/" target="_blank">View</a>
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">视觉设计岗（新媒体方向）</div>
+                    <div class="job-company">某知名消费品牌</div>
+                </div>
+                <span class="region-badge">长三角</span>
+            </div>
+            <div class="job-meta">
+                <span>上海</span><span>校招</span><span>视觉设计</span><span>截止: 2026-07-31</span>
+            </div>
+            <div class="job-desc">
+                负责公众号、小红书等新媒体内容的视觉设计；品牌线下促销推广活动的主视觉设计及物料延展；参与品牌整体视觉风格优化。要求视觉传达/平面设计相关专业，熟练PS/AI。
+            </div>
+            <div class="job-tags">
+                <span class="job-tag">视觉设计</span><span class="job-tag">新媒体</span><span class="job-tag">品牌设计</span><span class="job-tag">上海</span>
+            </div>
+            <a class="job-link" href="https://www.yingjiesheng.com/job-007-954-745.html" target="_blank">查看详情 →</a>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">森马服饰2026届校招 — 设计师岗</div>
+                    <div class="job-company">森马服饰（Semir）</div>
+                </div>
+                <span class="region-badge">长三角</span>
+            </div>
+            <div class="job-meta">
+                <span>上海/温州</span><span>校招</span><span>服装设计</span><span>截止: 2026-08-31</span>
+            </div>
+            <div class="job-desc">
+                森马服饰2026届校园招聘，招聘岗位：男/女装设计师、图案设计师、童装设计师。面向服装设计、视觉传达、纺织设计等相关专业2026届应届生。国内知名服饰品牌，发展空间大。
+            </div>
+            <div class="job-tags">
+                <span class="job-tag">服装设计</span><span class="job-tag">图案设计</span><span class="job-tag">品牌</span><span class="job-tag">上海</span><span class="job-tag">温州</span>
+            </div>
+            <a class="job-link" href="https://app.gaokaozhitongche.com/news/h/jOv3AdDw" target="_blank">查看详情 →</a>
+        </div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">体验设计/视觉设计（2026届校园招聘）</span>
-        <span class="card-company">阿里巴巴国际站</span>
-        <span class="badge badge-active">HOT</span>
-      </div>
-      <div class="card-desc">阿里国际2026届校招，1000+Offer。速卖通、阿里国际站、AI Business。设计类岗位。</div>
-      <div class="tags"><span class="tag">杭州</span><span class="tag">阿里巴巴</span><span class="tag">视觉设计</span></div>
-      <div class="card-meta">
-        <span>杭州</span>
-        <span>2026-07-31</span>
-        <span>2026</span>
-      </div>
-      <a class="card-link" href="https://careers-tongyi.alibaba.com/campus/home" target="_blank">View</a>
+    <div class="footer">
+        <p>© 2026 小飞侠工作室 · 芯夷校招情报站</p>
+        <p>数据每日更新 | 信息来源：应届生求职网、牛客网、各企业校招官网</p>
+        <p>站长：刘芯夷（澳科大视传2026届） | 维护：AI运营总监</p>
     </div>
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">视觉设计/交互设计（2026届校园招聘）</span>
-        <span class="card-company">百度</span>
-        <span class="badge badge-active">HOT</span>
-      </div>
-      <div class="card-desc">百度2026届校园招聘，4000+Offer。设计类：视觉设计、交互设计、用户研究。覆盖北京/上海/深圳/广州。</div>
-      <div class="tags"><span class="tag">北京</span><span class="tag">上海</span><span class="tag">广州</span><span class="tag">深圳</span></div>
-      <div class="card-meta">
-        <span>北京 / 上海 / 深圳 / 广州</span>
-        <span>2026-07-31</span>
-        <span>2026</span>
-      </div>
-      <a class="card-link" href="https://talent.baidu.com/jobs/campus" target="_blank">View</a>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">社会公开招聘（宣传策划类）</span>
-        <span class="card-company">福州国有资产投资控股</span>
-        <span class="badge badge-active">HOT</span>
-      </div>
-      <div class="card-desc">市属国企</div>
-      <div class="tags"><span class="tag">福建</span><span class="tag">福州</span><span class="tag">品牌设计</span></div>
-      <div class="card-meta">
-        <span>福州</span>
-        <span>2026-06-30</span>
-        <span>2026</span>
-      </div>
-      <a class="card-link" href="" target="_blank">View</a>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        <span class="card-title">品牌包装设计师</span>
-        <span class="card-company">瑞幸咖啡</span>
-        <span class="badge badge-active">HOT</span>
-      </div>
-      <div class="card-desc">瑞幸咖啡品牌包装设计师岗位，面向2026届应届毕业生。</div>
-      <div class="tags"><span class="tag">福建</span><span class="tag">福州</span><span class="tag">北京</span><span class="tag">品牌设计</span></div>
-      <div class="card-meta">
-        <span>北京</span>
-        <span>尽快投递</span>
-        <span>2026</span>
-      </div>
-      <a class="card-link" href="" target="_blank">View</a>
-    </div>
-    <footer>
-      <p>XiaoFeiXia Studio | Xinyi Campus Recruitment Station | AI Automated</p>
-      <p style="margin-top:6px;">Updated 2026-06-18 | Sources: Yingjiesheng, Nowcoder, Official Sites</p>
-    </footer>
-  </div>
 </body>
 </html>
