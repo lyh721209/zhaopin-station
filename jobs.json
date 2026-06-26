@@ -1,7 +1,7 @@
 {
-  "updated": "2026-06-25",
-  "total": 44,
-  "active": 36,
+  "updated": "2026-06-27",
+  "total": 49,
+  "active": 41,
   "jobs": [
     {
       "company": "林清轩",
@@ -442,6 +442,56 @@
       "type": "graphic",
       "highlight": "🆕 元宇宙/AI方向·品牌视觉设计",
       "url": "https://www.yingjiesheng.com/job-007-988-620.html"
+    },
+    {
+      "company": "快手",
+      "position": "视觉设计师/交互设计师（2026届校招）",
+      "city": "北京/杭州/上海/深圳/广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 短视频头部平台·设计类多城市",
+      "url": "https://campus.kuaishou.cn/"
+    },
+    {
+      "company": "字节跳动",
+      "position": "视觉/体验设计师（2026届校招）",
+      "city": "北京/上海/杭州/深圳/广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 5000+Offer·设计岗·全年开放投递",
+      "url": "https://job.toutiao.com/"
+    },
+    {
+      "company": "荣耀终端",
+      "position": "视觉设计师/UI设计师（2026届校招）",
+      "city": "深圳/北京/南京/上海/西安",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球智能终端品牌·产品与设计类",
+      "url": "https://career.honor.com/"
+    },
+    {
+      "company": "小鹏汽车",
+      "position": "造型设计师/CMF设计师（2026届校招）",
+      "city": "广州/深圳/上海/北京",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "industrial",
+      "highlight": "🆕 造车新势力·造型板块·美股上市",
+      "url": "https://xiaopeng.jobs.feishu.cn/campus/"
+    },
+    {
+      "company": "腾讯",
+      "position": "视觉设计师/交互设计师（2026校园招聘）",
+      "city": "深圳/北京/上海/广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 互联网巨头·设计类·游戏/平面交互",
+      "url": "https://join.qq.com/"
     }
   ]
 }
