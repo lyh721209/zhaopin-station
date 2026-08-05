@@ -1,8 +1,68 @@
 {
-  "updated": "2026-07-29",
-  "total": 75,
-  "active": 58,
+  "updated": "2026-08-05",
+  "total": 86,
+  "active": 67,
   "jobs": [
+    {
+      "company": "中兴通讯",
+      "position": "UI/视觉设计师（2026届校招）",
+      "city": "深圳/南京/上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球通信设备龙头·设计岗·三城可选",
+      "url": "https://job.zte.com.cn/cn/campus"
+    },
+    {
+      "company": "携程",
+      "position": "视觉/体验设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球OTA巨头·设计岗·上海总部",
+      "url": "https://campus.ctrip.com/"
+    },
+    {
+      "company": "联想",
+      "position": "设计类（2026届校招）",
+      "city": "北京/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球PC领军·设计岗·2026校招",
+      "url": "https://talent.lenovo.com.cn/campus"
+    },
+    {
+      "company": "米哈游",
+      "position": "游戏视觉设计师/UI设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 原神/崩坏厂商·游戏美术设计·上海",
+      "url": "https://campus.mihoyo.com/"
+    },
+    {
+      "company": "大疆",
+      "position": "工业设计师/视觉设计师（2026届校招）",
+      "city": "深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "industrial",
+      "highlight": "🆕 全球无人机霸主·设计岗·深圳总部",
+      "url": "https://we.dji.com/cn/campus"
+    },
+    {
+      "company": "小米",
+      "position": "视觉设计师/UI设计师（2026届校招）",
+      "city": "北京/南京/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球手机TOP3·设计岗·2026校招进行中",
+      "url": "https://hr.xiaomi.com/campus"
+    },
     {
       "company": "比亚迪",
       "position": "造型设计师/CMF设计师/视觉设计师（2026届校招）",
@@ -460,7 +520,7 @@
       "salary": "面议",
       "deadline": "2026-07-31",
       "type": "ui",
-      "highlight": "视觉传达设计/数字媒体专业",
+      "highlight": "⚠️已截止(原：视觉传达设计/数字媒体专业)",
       "url": "https://www.yingjiesheng.com/job-007-942-341.html"
     },
     {
@@ -500,7 +560,7 @@
       "salary": "面议",
       "deadline": "2026-07-31",
       "type": "industrial",
-      "highlight": "知名建筑设计公司·多城市",
+      "highlight": "⚠️已截止(原：知名建筑设计公司·多城市)",
       "url": "https://www.thape.com/news/890"
     },
     {
@@ -752,6 +812,56 @@
       "type": "visual",
       "highlight": "🆕 跨境电商出海·Figma/PS·海外社媒视觉",
       "url": "https://www.nowcoder.com/jobs/detail/453425"
+    },
+    {
+      "company": "SHEIN",
+      "position": "视觉设计师/品牌设计师（2026届校招）",
+      "city": "广州/南京/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 全球快时尚独角兽·视觉传达对口·广深宁三城",
+      "url": "https://app.mokahr.com/campus_apply/shein/2932"
+    },
+    {
+      "company": "厦门建发集团",
+      "position": "品牌设计/视觉传达岗（2026届校招）",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 世界500强·厦门国企龙头·品牌设计岗",
+      "url": "https://campus.chinacdc.com/"
+    },
+    {
+      "company": "厦门国贸控股",
+      "position": "品牌设计师（2026届校招·国企）",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 厦门国资委直属·世界500强·品牌设计",
+      "url": "https://campus.itgholding.com.cn/"
+    },
+    {
+      "company": "咪咕文化（中国移动）",
+      "position": "视觉设计师/UI设计师（2026届校招）",
+      "city": "北京/上海/厦门/成都/杭州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 中国移动旗下·数字内容·设计岗多城市",
+      "url": "https://www.migu.cn/about/join/jobs/campus"
+    },
+    {
+      "company": "网易（非游戏）",
+      "position": "视觉设计师/品牌设计师（2026届校招补录）",
+      "city": "杭州/北京/广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 网易云音乐/严选等·设计岗补录·杭京广",
+      "url": "https://campus.163.com/"
     }
   ]
 }
