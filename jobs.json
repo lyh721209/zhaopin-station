@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-05",
-  "total": 86,
-  "active": 67,
+  "updated": "2026-08-07",
+  "total": 91,
+  "active": 72,
   "jobs": [
     {
       "company": "中兴通讯",
@@ -862,6 +862,56 @@
       "type": "visual",
       "highlight": "🆕 网易云音乐/严选等·设计岗补录·杭京广",
       "url": "https://campus.163.com/"
+    },
+    {
+      "company": "小红书",
+      "position": "视觉设计师/品牌设计师（2026届校招）",
+      "city": "上海/北京",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 生活方式社区·视觉传达对口·沪京双城",
+      "url": "https://job.xiaohongshu.com/campus"
+    },
+    {
+      "company": "蔚来",
+      "position": "视觉设计师/CMF设计师（2026届校招）",
+      "city": "上海/合肥",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 高端智能电动车·设计岗·视觉/CMF双方向",
+      "url": "https://nio.jobs.feishu.cn/campus"
+    },
+    {
+      "company": "莉莉丝游戏",
+      "position": "游戏UI设计师/视觉设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "ui",
+      "highlight": "🆕 万国觉醒/剑与远征开发商·游戏设计岗",
+      "url": "https://careers.lilith.com/campus"
+    },
+    {
+      "company": "叠纸游戏",
+      "position": "游戏视觉设计师/品牌设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 恋与深空/闪耀暖暖开发商·视觉设计岗",
+      "url": "https://careers.papegames.com/campus"
+    },
+    {
+      "company": "鹰角网络",
+      "position": "视觉设计师/UI设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 明日方舟/来自星尘开发商·美术设计岗",
+      "url": "https://careers.hypergryph.com/campus"
     }
   ]
 }
