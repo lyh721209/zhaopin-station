@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-07",
-  "total": 91,
-  "active": 72,
+  "updated": "2026-08-08",
+  "total": 96,
+  "active": 77,
   "jobs": [
     {
       "company": "中兴通讯",
@@ -912,6 +912,56 @@
       "type": "visual",
       "highlight": "🆕 明日方舟/来自星尘开发商·美术设计岗",
       "url": "https://careers.hypergryph.com/campus"
+    },
+    {
+      "company": "TCL",
+      "position": "视觉设计师/工业设计师（2026届校招）",
+      "city": "惠州/深圳/中山",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球领先智能科技·设计岗·大湾区",
+      "url": "https://campus.tcl.com/"
+    },
+    {
+      "company": "三七互娱",
+      "position": "游戏视觉设计师/UI设计师（2026届校招）",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球TOP20游戏发行商·三七互娱·游戏设计岗",
+      "url": "https://zhaopin.37.com/campus"
+    },
+    {
+      "company": "吉比特",
+      "position": "游戏UI设计师/视觉设计师（2026届校招·雷霆游戏）",
+      "city": "深圳/厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "ui",
+      "highlight": "🆕 问道/摩尔庄园开发商·深厦双城·游戏美术",
+      "url": "https://campus.g-bits.com/"
+    },
+    {
+      "company": "游族网络",
+      "position": "游戏视觉设计师/UI设计师（2026届校招）",
+      "city": "上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 少年三国志/绯红神约开发商·游戏视觉设计",
+      "url": "https://campus.yoozoo.com/"
+    },
+    {
+      "company": "美的集团",
+      "position": "视觉设计师/品牌设计师（2026届校招）",
+      "city": "佛山/深圳/上海",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 世界500强·家电巨头·品牌视觉设计岗",
+      "url": "https://career.midea.com/campus"
     }
   ]
 }
