@@ -1,7 +1,7 @@
 {
   "updated": "2026-08-08",
-  "total": 96,
-  "active": 77,
+  "total": 99,
+  "active": 80,
   "jobs": [
     {
       "company": "中兴通讯",
@@ -962,6 +962,36 @@
       "type": "brand",
       "highlight": "🆕 世界500强·家电巨头·品牌视觉设计岗",
       "url": "https://career.midea.com/campus"
+    },
+    {
+      "company": "点点互动（Century Games）",
+      "position": "平面设计/CMF设计/视觉设计（26届校招）",
+      "city": "北京",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球游戏大厂Century Games·设计类三方向·校招倒计时",
+      "url": "https://career.centurygames.cn/campus/jobs"
+    },
+    {
+      "company": "勇仕网络",
+      "position": "UI设计师/UX设计师（26招聘·美术类）",
+      "city": "厦门/上海/广州",
+      "salary": "面议",
+      "deadline": "2026-08-12",
+      "type": "ui",
+      "highlight": "🆕 厦门游戏厂商·UI/UX/2D美宣多岗·8月12日截止",
+      "url": "https://campus.niuqizp.com/schedule-7yks5MLLL.html"
+    },
+    {
+      "company": "伟易达（东莞）",
+      "position": "平面设计（可应届或实习）",
+      "city": "东莞",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 外资电子大厂·平面设计应届/实习均可·大湾区东莞",
+      "url": "https://m.itouchtv.cn/article/42cd5195651a2f149ae732a7c1e9fa69"
     }
   ]
 }
