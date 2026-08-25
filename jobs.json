@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-08",
-  "total": 99,
-  "active": 80,
+  "updated": "2026-08-24",
+  "total": 103,
+  "active": 83,
   "jobs": [
     {
       "company": "中兴通讯",
@@ -980,7 +980,7 @@
       "salary": "面议",
       "deadline": "2026-08-12",
       "type": "ui",
-      "highlight": "🆕 厦门游戏厂商·UI/UX/2D美宣多岗·8月12日截止",
+      "highlight": "⚠️已截止(原：厦门游戏厂商·UI/UX/2D美宣多岗·8月12日截止)",
       "url": "https://campus.niuqizp.com/schedule-7yks5MLLL.html"
     },
     {
@@ -992,6 +992,46 @@
       "type": "graphic",
       "highlight": "🆕 外资电子大厂·平面设计应届/实习均可·大湾区东莞",
       "url": "https://m.itouchtv.cn/article/42cd5195651a2f149ae732a7c1e9fa69"
+    },
+    {
+      "company": "海康威视",
+      "position": "设计类（2026届校招）",
+      "city": "北京/广州/上海/深圳/长沙",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 全球安防龙头·2026届校招含设计类·广深有岗",
+      "url": "https://campushr.hikvision.com"
+    },
+    {
+      "company": "智元机器人（AgiBot）",
+      "position": "平面设计/品牌设计（2026届校招）",
+      "city": "北京/上海/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 人形机器人头部企业·非技术岗含平面/品牌设计·北沪深",
+      "url": "https://www.zhiyuan-robot.com"
+    },
+    {
+      "company": "万得（Wind）",
+      "position": "UI设计师/平面设计师（2026届校招）",
+      "city": "上海/南京/苏州/扬州/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "ui",
+      "highlight": "🆕 金融数据巨头·职能类含UI/平面设计·多城可选",
+      "url": "https://www.wind.com.cn"
+    },
+    {
+      "company": "路特创新",
+      "position": "视觉传达/产品设计（2026届校招）",
+      "city": "深圳/香港",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 母婴科技出海·视觉传达/工业设计对口·深圳香港·100+国际奖项",
+      "url": ""
     }
   ]
 }
