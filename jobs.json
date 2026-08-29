@@ -1,8 +1,48 @@
 {
-  "updated": "2026-08-24",
-  "total": 103,
-  "active": 83,
+  "updated": "2026-08-29",
+  "total": 107,
+  "active": 87,
   "jobs": [
+    {
+      "company": "点触科技",
+      "position": "游戏美术/设计类（2026届秋招·8月底新开）",
+      "city": "厦门",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 厦门历史养成游戏厂商·2026秋招近3天新开·美术设计岗",
+      "url": "https://www.dianchu.com/zhaopin"
+    },
+    {
+      "company": "宝宝巴士（BabyBus）",
+      "position": "平面设计师（2026届校招）",
+      "city": "福州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 福州互联网头部·全球儿童内容品牌·平面设计校招岗",
+      "url": "https://www.zhipin.com/job_detail/f6ddfd5db9953ea403V9296-EFNQ.html"
+    },
+    {
+      "company": "阿里巴巴灵犀互娱",
+      "position": "美术/设计类（2026届春招补录）",
+      "city": "广州/上海/北京",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 阿里旗下游戏·美术设计岗补录·内推码2T47VGDC·广沪京三城",
+      "url": "https://go.lingxigames.com/s/0pTw9o"
+    },
+    {
+      "company": "网易雷火（NetEase Leihuo）",
+      "position": "品牌设计/界面动效/原画设计师（2026届补招）",
+      "city": "杭州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 网易雷火2026届补招·品牌设计/界面动效VX/场景角色原画·艺术设计方向",
+      "url": "https://xiaozhao.leihuo.netease.com/neitui/#/?introduceId=jbgitb8p6i2u9zjn"
+    },
     {
       "company": "中兴通讯",
       "position": "UI/视觉设计师（2026届校招）",
