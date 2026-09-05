@@ -1,7 +1,7 @@
 {
-  "updated": "2026-08-29",
-  "total": 107,
-  "active": 87,
+  "updated": "2026-09-05",
+  "total": 110,
+  "active": 90,
   "jobs": [
     {
       "company": "点触科技",
@@ -1072,6 +1072,36 @@
       "type": "brand",
       "highlight": "🆕 母婴科技出海·视觉传达/工业设计对口·深圳香港·100+国际奖项",
       "url": ""
+    },
+    {
+      "company": "佛山市新豪轩门业",
+      "position": "平面VI设计管培生（全职·2026校招）",
+      "city": "佛山",
+      "salary": "4K-5K/月",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 门窗行业前三·终端VI/SI视觉·视传/平面/广告对口·五险一金·9月4日新发",
+      "url": "https://m.yingjiesheng.com/job-008-055-829.html"
+    },
+    {
+      "company": "深圳华大基因",
+      "position": "平面设计实习生（品牌VI/产品视觉）",
+      "city": "深圳",
+      "salary": "面议（包住宿）",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 全球生命科学龙头·品牌VI/电商/会展视觉·包住宿·9月3日新发",
+      "url": "https://m.yingjiesheng.com/job-008-052-568.html"
+    },
+    {
+      "company": "广东省建筑设计研究院集团",
+      "position": "视觉传达设计师（校招·国企）",
+      "city": "广州/深圳",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 省属国企·中国工程设计60强·视觉设计师·广深多城可选",
+      "url": "https://m.yingjiesheng.com/job-008-035-911.html"
     }
   ]
 }
