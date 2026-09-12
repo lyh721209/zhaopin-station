@@ -1,8 +1,48 @@
 {
-  "updated": "2026-09-05",
-  "total": 110,
-  "active": 90,
+  "updated": "2026-09-12",
+  "total": 114,
+  "active": 94,
   "jobs": [
+    {
+      "company": "九阳股份",
+      "position": "视觉设计师/视觉设计师（商详方向·2027届秋招）",
+      "city": "杭州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "visual",
+      "highlight": "🆕 小家电龙头·9月8日新发·视觉设计/商详方向·9月9日空中宣讲",
+      "url": "https://www.joyoung.com/"
+    },
+    {
+      "company": "库洛游戏",
+      "position": "视觉设计师/游戏美术类（2027届秋招）",
+      "city": "广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 鸣潮/战双开发商·9月新发·视觉设计/角色模型/UE交互多方向",
+      "url": "https://www.kurogames.com/"
+    },
+    {
+      "company": "4399游戏",
+      "position": "美术/设计类（2027届校招·9月新发）",
+      "city": "厦门/广州",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "graphic",
+      "highlight": "🆕 页游巨头·厦门总部·美术类多岗·六险一金·9月7日新发",
+      "url": "http://job.mju.edu.cn/campus/view/id/977183"
+    },
+    {
+      "company": "九号公司（Ninebot）",
+      "position": "品牌设计师（2026届/2027届秋招内推）",
+      "city": "北京",
+      "salary": "面议",
+      "deadline": "招满即止",
+      "type": "brand",
+      "highlight": "🆕 短交通智能装备龙头·9月3日新发·品牌设计岗·26/27届均可",
+      "url": "https://www.ninebot.com/"
+    },
     {
       "company": "点触科技",
       "position": "游戏美术/设计类（2026届秋招·8月底新开）",
@@ -605,12 +645,12 @@
     },
     {
       "company": "得物App",
-      "position": "设计部2026届秋季校招（体验设计/视觉设计）",
+      "position": "设计部2027届秋季校招（视觉设计师/体验设计师）",
       "city": "上海",
       "salary": "面议",
       "deadline": "招满即止",
       "type": "visual",
-      "highlight": "潮流电商头部·设计部专项",
+      "highlight": "🆕 设计部2027届秋招9月11日启动·视觉/体验设计师·AIGC能力加分",
       "url": "https://www.behance.net/gallery/234776625/2026"
     },
     {
